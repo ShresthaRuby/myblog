@@ -1,0 +1,2085 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0079)http://www.dreamincode.net/forums/topic/250097-edit-data-in-database-using-php/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <title>Edit Data In Database Using Php - PHP | Dream.In.Code</title>
+    
+	
+	<meta name="keywords" content="edit,data,database,using,php,want,phphere,code,but,error,submit">
+	
+
+	<meta name="description" content="edit data in database using php: ">
+	
+
+	<meta name="identifier-url" content="http://www.dreamincode.net/forums/topic/250097-edit-data-in-database-using-php/">
+	
+
+	
+		
+			
+			
+			
+			
+				<link rel="canonical" href="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/Edit Data In Database Using Php - PHP   Dream.In.Code.htm">
+			
+		
+
+			
+			
+			
+			
+				<link rel="up" href="http://www.dreamincode.net/forums/forum/28-php/">
+			
+		
+
+			
+			
+			
+			
+				<link rel="author" href="http://www.dreamincode.net/forums/user/547290-maelienel/">
+			
+		
+	
+
+		
+			
+			
+				<link rel="alternate feed" type="application/rss+xml" title="Programming Forums" href="http://www.dreamincode.net/forums/rss/forums/1-programming-forums/">
+			
+			
+			
+		
+
+			
+			
+				<link rel="alternate feed" type="application/rss+xml" title="Dream.In.Code Blogs RSS feed" href="http://www.dreamincode.net/forums/rss/blog/">
+			
+			
+			
+		
+	
+
+	
+				
+			<link rel="stylesheet" type="text/css" href="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/awards.css">
+		
+	
+
+				
+			<link rel="stylesheet" type="text/css" title="Main" media="screen" href="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/calendar_select.css">
+		
+	
+
+				
+			<link rel="stylesheet" type="text/css" media="print" href="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/ipb_print.css">
+		
+	
+
+				
+			<link rel="stylesheet" type="text/css" title="Main" media="screen" href="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/ipb_editor.css">
+		
+	
+
+				
+			<link rel="stylesheet" type="text/css" title="Main" media="screen" href="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/ipb_styles.css">
+		
+	
+	
+
+<!--[if lte IE 7]>
+	<link rel="stylesheet" type="text/css" title='Main' media="screen" href="http://cdn.dreamincode.net/forums/public/style_css/css_8/ipb_ie.css?v=58" />
+<![endif]-->
+    <!--included content-->
+    <meta http-equiv="X-UA-Compatible" content="IE=8">
+	<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="http://www.dreamincode.net/home/favicon.ico">
+	<link rel="alternate" title="dream.in.code Forums" href="http://www.dreamincode.net/rss/featured.php" type="application/rss+xml">
+	<link type="text/css" rel="stylesheet" href="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/styles_7.css">
+	<link rel="stylesheet" href="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/google_cse.css" type="text/css">
+	<link rel="stylesheet" href="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/thickbox.css" type="text/css">
+	<meta property="fb:page_id" content="62219401412">
+
+	<!-- OLD LAYOUT -->
+		<script src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/cb=gapi.loaded_1" async=""></script><script src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/cb=gapi.loaded_0" async=""></script><script type="text/javascript" async="" src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/plusone.js" gapi_processed="true"></script><script type="text/javascript" src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/jquery.min.js"></script>
+		<script type="text/javascript">
+		jQuery.noConflict();
+		</script>
+		<script type="text/javascript">
+		  //<![CDATA[
+		  function loginToggle() {
+			var target = document.getElementById("login").getElementsByTagName("div")[0];
+			!target.className.match(/ visible/) ? target.className += " visible" : target.className = target.className.replace(/ visible/, "");
+			}
+		  //]]>
+		</script>  
+<!-- 		<script type="text/javascript">
+		function utmx_section(){}function utmx(){}
+		(function(){var k='2514943763',d=document,l=d.location,c=d.cookie;function f(n){
+		if(c){var i=c.indexOf(n+'=');if(i>-1){var j=c.indexOf(';',i);return escape(c.substring(i+n.
+		length+1,j<0?c.length:j))}}}var x=f('__utmx'),xx=f('__utmxx'),h=l.hash;
+		d.write('<sc'+'ript src="'+
+		'http'+(l.protocol=='https:'?'s://ssl':'://www')+'.google-analytics.com'
+		+'/siteopt.js?v=1&utmxkey='+k+'&utmx='+(x?x:'')+'&utmxx='+(xx?xx:'')+'&utmxtime='
+		+new Date().valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
+		'" type="text/javascript" charset="utf-8"></sc'+'ript>')})();
+		</script>
+ -->
+
+<!-- 
+	<link type="text/css" rel="stylesheet" href="http://cdn.dreamincode.net/syntax/SyntaxHighlighter.css"></link>
+	<script language="javascript" src="http://cdn.dreamincode.net/syntax/shCore.js"></script>
+
+	<link href="http://cdn.dreamincode.net/syntax/prettify.css" type="text/css" rel="stylesheet" />
+	<script type="text/javascript" src="http://cdn.dreamincode.net/syntax/prettify.js"></script>
+-->
+<!-- 	
+	<link href="http://cdn.dreamincode.net/forums/public/style_css/prettify.css" type="text/css" rel="stylesheet" />
+	<script type="text/javascript" src="http://cdn.dreamincode.net/forums/public/js/3rd_party/prettify/prettify.js"></script>
+
+ -->
+
+
+	
+<!-- Google Website Optimizer Control Script -->
+<!-- End of Google Website Optimizer Control Script -->
+
+<script type="text/javascript">
+(function() {
+var useSSL = 'https:' == document.location.protocol;
+var src = (useSSL ? 'https:' : 'http:') +
+'//www.googletagservices.com/tag/js/gpt.js';
+document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
+})();
+</script><script src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/gpt.js"></script>
+
+<script type="text/javascript">
+googletag.defineSlot('/1014587/DIC_728x90_Header_Default', [728, 90], 'div-gpt-ad-1326943007260-5').addService(googletag.pubads());
+googletag.defineSlot('/1014587/DIC_300x250_FirstPost_Default', [300, 250], 'div-gpt-ad-1326943007260-1').addService(googletag.pubads());
+googletag.defineSlot('/1014587/DIC_336x280_Footer_Default', [336, 280], 'div-gpt-ad-1326943007260-4').addService(googletag.pubads());
+googletag.defineSlot('/1014587/DIC_300x250_TopCenter_Default', [300, 250], 'div-gpt-ad-1326943007260-2').addService(googletag.pubads());
+googletag.defineSlot('/1014587/DIC_160x600_Left_Default', [160, 600], 'div-gpt-ad-1326943007260-0').addService(googletag.pubads());
+googletag.pubads().enableSyncRendering();
+googletag.enableServices();
+</script><script type="text/javascript" src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/pubads_impl_36.js"></script>
+
+<!--/ included content-->
+    <script type="text/javascript">
+      jsDebug = 0; /* Must come before JS includes */
+      USE_RTE = 0;
+      inACP   = false;
+    </script>
+    
+		<script type="text/javascript" src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/prototype.js"></script>
+	
+	<script type="text/javascript" src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/ipb.js"></script>
+	
+		<script type="text/javascript" src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/scriptaculous-cache.js"></script>
+	
+	<script type="text/javascript" src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/ipb.lang.js" charset="iso-8859-1"></script>
+	
+
+<script type="text/javascript">
+	var isRTL	= false;
+	var rtlIe	= '';
+	var rtlFull	= '';
+</script>
+
+		
+    <script type="text/javascript">
+	//<![CDATA[
+		/* ---- URLs ---- */
+		ipb.vars['base_url'] 			= 'http://www.dreamincode.net/forums/index.php?&';
+		ipb.vars['board_url']			= 'http://www.dreamincode.net/forums';
+		ipb.vars['loading_img'] 		= 'http://cdn.dreamincode.net/forums/public/style_images/DIC/loading.gif';
+		ipb.vars['active_app']			= 'forums';
+		ipb.vars['upload_url']			= 'http://www.dreamincode.net/forums/uploads';
+		/* ---- Member ---- */
+		ipb.vars['member_id']			= parseInt( 0 ),
+		ipb.vars['is_supmod']			= parseInt( 0 ),
+		ipb.vars['is_admin']			= parseInt( 0 ),
+		ipb.vars['secure_hash'] 		= '880ea6a14ea49e853634fbdc5015a024';
+		ipb.vars['session_id']			= 'e53b087f4cf5b940a3a0331c2185c40a';
+		ipb.vars['can_befriend']		= true;
+		/* ---- cookies ----- */
+		ipb.vars['cookie_id'] 			= 'dic_';
+		ipb.vars['cookie_domain'] 		= '.dreamincode.net';
+		ipb.vars['cookie_path']			= '/';
+		/* ---- Rate imgs ---- */
+		ipb.vars['rate_img_on']			= 'http://cdn.dreamincode.net/forums/public/style_images/DIC/bullet_star.png';
+		ipb.vars['rate_img_off']		= 'http://cdn.dreamincode.net/forums/public/style_images/DIC/bullet_star_off.png';
+		ipb.vars['rate_img_rated']		= 'http://cdn.dreamincode.net/forums/public/style_images/DIC/bullet_star_rated.png';
+		/* ---- Uploads ---- */
+		ipb.vars['swfupload_swf']		= 'http://www.dreamincode.net/forums/public/js/3rd_party/swfupload/swfupload.swf';
+		ipb.vars['swfupload_enabled']	= true;
+		ipb.vars['use_swf_upload']		= ( '' == 'flash' ) ? true : false;
+		ipb.vars['swfupload_debug']		= false; /* SKINNOTE: Turn off for production */
+		/* ---- other ---- */
+		ipb.vars['use_live_search'] 	= 0;
+		ipb.vars['live_search_limit'] 	= 4;
+		ipb.vars['highlight_color']		= "#ade57a";
+		ipb.vars['charset']				= "iso-8859-1";
+		ipb.vars['use_rte']				= 1;
+		ipb.vars['image_resize']		= 1;
+		ipb.vars['image_resize_force']  = 500;
+		ipb.vars['seo_enabled']			= 1;
+		
+		ipb.vars['seo_params']			= {"start":"-","end":"\/","varBlock":"\/page__","varSep":"__"};
+		
+		/* Templates/Language */
+		ipb.templates['ajax_loading'] 	= "<div id='ajax_loading'>" + ipb.lang['loading'] + "</div>";
+		ipb.templates['close_popup']	= "<img src='http://cdn.dreamincode.net/forums/public/style_images/DIC/close_popup.png' alt='x' />";
+		ipb.templates['rss_shell']		= new Template("<ul id='rss_menu'>#{items}</ul>");
+		ipb.templates['rss_item']		= new Template("<li><a href='#{url}' title='#{title}'>#{title}</a></li>");
+		ipb.templates['resized_img']	= new Template("<span>Resized to #{percent}% (was #{width} x #{height}) - Click image to enlarge</span>");
+		ipb.templates['m_add_friend']	= new Template("<a href='http://www.dreamincode.net/forums/index.php?app=members&amp;module=profile&amp;section=friends&amp;do=add&amp;member_id=#{id}' title='Add as Friend'><img src='http://cdn.dreamincode.net/forums/public/style_images/DIC/user_add.png' alt='Add as Friend' /></a>");
+		ipb.templates['m_rem_friend']	= new Template("<a href='http://www.dreamincode.net/forums/index.php?app=members&amp;module=profile&amp;section=friends&amp;do=remove&amp;member_id=#{id}' title='Remove Friend'><img src='http://cdn.dreamincode.net/forums/public/style_images/DIC/user_delete.png' alt='Remove Friend' /></a>");
+		ipb.templates['autocomplete_wrap'] = new Template("<ul id='#{id}' class='ipb_autocomplete' style='width: 250px;'></ul>");
+		ipb.templates['autocomplete_item'] = new Template("<li id='#{id}'><img src='#{img}' alt='' width='#{img_w}' height='#{img_h}' />&nbsp;&nbsp;#{itemvalue}</li>");
+		ipb.templates['page_jump']		= new Template("<div id='#{id}_wrap' class='ipbmenu_content'><h3 class='bar'>Jump to page</h3><input type='text' class='input_text' id='#{id}_input' size='8' /> <input type='submit' value='Go' class='input_submit add_folder' id='#{id}_submit' /></div>");
+	//]]>
+	</script>
+
+
+ 
+
+
+
+
+    <script type="text/javascript">
+      Loader.boot();
+    </script><script type="text/javascript" src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/ips.quickpm.js"></script><script type="text/javascript" src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/ips.editor.js"></script><script type="text/javascript" src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/ips.topic.js"></script><script type="text/javascript" src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/ips.rating.js"></script>
+
+
+
+
+<style type="text/css">
+pre { overflow: scroll; max-height:500px; background: white; border: 1px solid #66666; padding: 5px; }
+</style>
+
+
+  <script type="text/javascript" async="" src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/a.min.js"></script><script type="text/javascript" src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/osd.js"></script><script type="text/javascript" async="" src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/a.min.js"></script><script type="text/javascript" async="" src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/a.min.js"></script><script type="text/javascript" async="" src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/a.min.js"></script><script type="text/javascript" src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/saved_resource"></script><script type="text/javascript" async="" src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/a.min.js"></script><script type="text/javascript" charset="UTF-8" src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/l.js"></script></head><!--included content-->
+
+
+<!-- <body onload="prettyPrint()"> -->
+ <body itemscope="" itemtype="http://schema.org/WebPage" style=""><div id="_GPL_e6a00_parent_div" style="position: absolute; top: 0px; left: 0px; width: 1px; height: 1px; z-index: 2147483647;"><object type="application/x-shockwave-flash" id="_GPL_e6a00_swf" data="http://cdncache-a.akamaihd.net/items/e6a00/storage.swf?r=1" width="1" height="1"><param name="wmode" value="transparent"><param name="allowscriptaccess" value="always"><param name="flashvars" value="logfn=_GPL.items.e6a00.log&amp;onload=_GPL.items.e6a00.onload&amp;onerror=_GPL.items.e6a00.onerror&amp;LSOName=gpl"></object></div><iframe src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/storageframe.htm" id="LOCSTORAGE" scrolling="no" style="width: 1px; height: 1px; position: absolute; top: -7px; left: -7px; border: 0px;"></iframe>
+<!-- TOP.PHP -->
+<!-- 	<div style="width: 99%; border-bottom: 1px solid black; padding: 5px; text-align: center; font-size: 14px; background: #FFFF99; font-weight: bolder;">
+
+		<a href="http://a.lakequincy.com/c.ashx?publisher=112&placement=7639&creative=7182" target="_blank">Turn your Mobile Apps into m-commerce apps – Learn More!</a>
+	</div> -->
+	
+	 
+	 
+	 <!-- <div style="color: white; height: 27px; margin: 0px auto; border-bottom: 0px solid white; padding: 0px; text-align: center; font-size: 14px; background-color: #1B50E0; font-weight: bolder;">
+	<div class="lqm_ad" lqm_publisher="lqm.dreamincode.site" lqm_zone="RON" lqm_format="1x6"></div>		
+	</div>  -->
+
+
+
+
+	<div id="header">
+        <h1 id="logo" style="width: 625px;"><a href="http://www.dreamincode.net/" rel="home"><img alt="&lt;/Dream.In.Code&gt;: Programming &amp; Web Development Community" width="264" height="110" src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/logo_2012.gif"></a>
+		<!-- <a href="http://ad.doubleclick.net/clk;253234078;66891089;u?http://www.devexpress.com/go/DreamInCode_Touch_88x325.aspx"><img src="http://cdn.dreamincode.net/home/images/DIC_DX_Build_Touch.png" height="88" border="0" style="margin-top: 10px; margin-left: 10px; padding-left: 5px; border-left: 1px solid #F7F7F7;"></a> -->
+		<!--<div style="position: absolute; top: 0px; left: 265px; width: 325px; height: 110px; border-left: 1px solid #F7F7F7; text-indent: 0pt;"><div class="lqm_ad" lqm_publisher="lqm.dreamincode.site" lqm_zone="ros" lqm_format="325x110"></div></div>-->
+		</h1>
+  		<!-- 	<div id="leaderboard">
+  					<div style="overflow: hidden; width: 728px; height: 90px;"></div>
+			</div> -->
+
+
+		<div style="height: 110px;">
+		   
+			<div style="padding-top: 30px; padding-right: 10px; float: right;">
+					<!-- google_ad_section_start(weight=ignore) -->		
+						<!-- Google CSE Search Box Begins  -->
+					
+				  <form style="margin: 0pt;" id="cse-search-box">
+
+						<span style="float: left; font-size: 24px; padding-top: 5px; padding-right: 5px; color: white; font-weight: bolder; text-shadow: 1px 1px 1px rgb(0, 0, 0);">Search:</span>
+						<input name="q" id="query" size="18" style="font-size: 20px; margin-top: 5px; border: 1px solid; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; background-image: url(http://www.google.com/cse/intl/en/images/google_custom_search_watermark.gif); background-color: rgb(255, 255, 255); background-position: 0% 50%; background-repeat: no-repeat no-repeat;" value="" type="text">
+						<input name="sa" value="Search" style="color: white; background: #303030; font-weight: bolder; border: 1px solid black; margin: 0px 0px 0px 5px; padding: 5px; -moz-border-radius: 5px 5px 5px 5px; border-radius: 5px 5px 5px 5px; position: relative; top: -3px;" type="submit">
+
+				  </form>
+					<script type="text/javascript">
+ 					var f = document.getElementById('cse-search-box');
+					var q = f.q;
+					    var b = function() {
+						  if (q.value == '') {
+							q.style.background = '#FFFFFF url(http:\x2F\x2Fwww.google.com\x2Fcse\x2Fintl\x2Fen\x2Fimages\x2Fgoogle_custom_search_watermark.gif) left no-repeat';
+						  }
+						};
+
+						var f = function() {
+						  q.style.background = '#ffffff';
+						};
+						window.onload = b;
+						q.onfocus = f;
+						q.onblur = b;
+
+					</script>
+				  <div style="text-align: right; clear: both;">
+				  <a href="http://www.dreamincode.net/forums/index.php?app=core&module=search" style="text-decoration: none;"><span style="font-size: 11px; color: rgb(255, 255, 255); font-weight: bold; text-decoration: underline; text-align: right;">Advanced Forum Search</span></a>
+				  </div>
+					<!-- Google CSE code begins -->
+			</div>
+
+		</div>
+
+
+		  <div id="navigation-login-register">
+					<ul class="navigation">
+					  <li class="first"><a href="http://www.dreamincode.net/forums/">Forums</a></li>
+					  <li>
+			  <a href="http://www.dreamincode.net/forums/forum/76-programming-help/">Programming</a>          
+			</li>
+					  <li>
+					   <a href="http://www.dreamincode.net/forums/forum/74-web-development/">Web Development</a>
+
+			</li>
+			<li><a href="http://www.dreamincode.net/forums/forum/71-computer-support/">Computers</a></li>
+					  <li><a href="http://www.dreamincode.net/forums/forum/78-programming-tutorials/">Tutorials</a></li>
+					  <li><a href="http://www.dreamincode.net/forums/forum/205-snippets/">Snippets</a></li>
+					  <li><a href="http://www.dreamincode.net/forums/?automodule=blog">Dev Blogs</a></li>
+					  <li><a href="http://jobs.dreamincode.net/">Jobs</a></li>
+					  <li class="last">
+					   <a rel="nofollow" href="http://www.dreamincode.net/forums/forum/1-caffeine-lounge/">Lounge</a>
+
+			</li>
+					</ul>
+					  <!-- INCLUDE CLASS PANEL -->
+												<ul id="login-register">
+	<li id="login"><a rel="nofollow" href="http://www.dreamincode.net/forums/index.php?app=core&module=global&section=login">Login</a></li>
+	<li id="register"><a rel="nofollow" href="http://www.dreamincode.net/forums/index.php?app=core&module=global&section=register&coppa_user=&termsread=1&coppa_pass=1&agree_to_terms=1">Join!</a></li>
+	<li id="todaystopics"><a href="http://www.dreamincode.net/forums/index.php?app=core&module=search&do=active">Today's Topics</a></li>
+</ul>
+						<!-- /INCLUDE CLASS PANEL -->
+		</div>
+      </div>
+
+
+
+	<div id="div-gpt-ad-1326943007260-5" style="margin: 5px auto; width: 100%; min-height: 90px; text-align: center;">
+	<!-- begin ad tag (tile=1) -->
+	<script type="text/javascript">
+	//<![CDATA[
+	ord = window.ord || Math.floor(Math.random()*1E16);
+	document.write('<script type="text/javascript" src="http://ad2.netshelter.net/adj/ns.dreamincode/general;ppos=atf;kw=;tile=1;dcopt=ist;sz=728x90,970x90,970x250;ord=' + ord + '?"><\/script>');
+	//]]>
+	</script><script type="text/javascript" src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/general;ppos=atf;kw=;tile=1;dcopt=ist;sz=728x90,970x90,970x250"></script><script type="text/javascript" src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/728x90_ATF_NetShelter_Backup.js"></script><script type="text/javascript" src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/ads"></script><div id="div-gpt-ad-1326943007260-5_ad_container"><div data-type="ad" data-publisher="lqm.dreamincode.site" data-zone="ron" data-format="728x90"><iframe id="dmad1" allowtransparency="false" style="z-index:10" width="728" height="90" marginwidth="0" marginheight="0" frameborder="0" scrolling="no"></iframe></div>
+
+<script type="text/javascript">
+    function _dmBootstrap(file) {
+        var _dma = document.createElement('script'); 
+        _dma.type = 'text/javascript';
+        _dma.async = true; 
+        _dma.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + file;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(_dma);
+    }
+    function _dmFollowup(file) { if (typeof DMAds === 'undefined')  _dmBootstrap('cdn2.DeveloperMedia.com/a.min.js');}
+    (function () { _dmBootstrap('cdn1.DeveloperMedia.com/a.min.js'); setTimeout(_dmFollowup, 2000);})();
+</script>
+</div>
+
+
+	<noscript>&lt;a href="http://ad2.netshelter.net/jump/ns.dreamincode/general;ppos=atf;kw=;tile=1;sz=728x90,970x90,970x250;ord=123456789?" target="_blank" &gt;&lt;img src="http://ad2.netshelter.net/ad/ns.dreamincode/general;ppos=atf;kw=;tile=1;sz=728x90,970x90,970x250;ord=123456789?" border="0" alt="" /&gt;&lt;/a&gt;</noscript>
+	<!-- end ad tag -->
+	</div>
+
+
+
+<div style=" background: #FFF; margin: 0px auto; border-left: 1px solid #FFF;border-right: 1px solid #FFF;">
+    <!-- /TOP.PHP -->
+
+
+<!--/ included content-->
+    <!-- <?=forums?> | <?=forums?> -->
+
+  <div id="main_content">
+    <div id="content_hold" class="with_sidebar">
+      <div id="content_inner" class="content">
+        <div id="ipbwrapper">
+<ul id="breadcrumb" itemprop="breadcrumb" class="left"><li class="first"><a href="http://www.dreamincode.net/forums/index">Dream.In.Code</a></li>
+  
+            <li><span class="nav_sep">&gt;</span> <a href="http://www.dreamincode.net/forums/forum/76-programming-help/" title="Return to Programming Help">Programming Help</a></li>
+  
+
+
+            <li><span class="nav_sep">&gt;</span> <a href="http://www.dreamincode.net/forums/forum/28-php/" title="Return to PHP">PHP</a></li>
+  
+
+          </ul><br>
+          <!--included content-->
+<!-- ads_top.php -->
+<!-- 
+	<div id=EchoTopic>
+	<br />
+-->
+
+<!--/ads_top.php -->
+<!--/ included content-->
+          <div id="content" class="clear">
+            <a id="j_content"></a>
+            <!--topicViewTemplate-->
+
+
+
+
+
+
+
+<script type="text/javascript">
+//<![CDATA[
+	ipb.topic.inSection = 'topicview';
+	ipb.topic.topic_id  = 250097;
+	ipb.topic.forum_id  = 28;
+	ipb.topic.start_id  = 0;
+	// Editor JS: Only needs to be done once per page
+	ipb.editor_values.get('templates')['link'] = new Template("<label for='#{id}_url'>URL</label><input type='text' class='input_text' id='#{id}_url' value='http://' tabindex='10' /><label for='#{id}_urltext'>Link text</label><input type='text' class='input_text _select' id='#{id}_urltext' value='My link' tabindex='11' /><input type='submit' class='input_submit' value='Insert Link' tabindex='12' />");
+ipb.editor_values.get('templates')['image'] = new Template("<label for='#{id}_img'>Image URL</label><input type='text' class='input_text' id='#{id}_img' value='http://' tabindex='10' /><input type='submit' class='input_submit' value='Insert Image' tabindex='11' />");
+ipb.editor_values.get('templates')['email'] = new Template("<label for='#{id}_email'>Email Address</label><input type='text' class='input_text' id='#{id}_email' tabindex='10' /><label for='#{id}_emailtext'>Link text</label><input type='text' class='input_text _select' id='#{id}_emailtext' value='Email me' tabindex='11' /><input type='submit' class='input_submit' value='Insert Email' tabindex='12' />");
+ipb.editor_values.get('templates')['media'] = new Template("<label for='#{id}_media'>Media URL</label><input type='text' class='input_text' id='#{id}_media' value='http://' tabindex='10' /><input type='submit' class='input_submit' value='Insert Media' tabindex='11' />");
+ipb.editor_values.get('templates')['generic'] = new Template("<div class='rte_title'>#{title}</div><strong>Example</strong><pre>#{example}</pre><label for='#{id}_option' class='optional'>#{option_text}</label><input type='text' class='input_text optional' id='#{id}_option' tabindex='10' /><label for='#{id}_text'>#{value_text}</label><input type='text' class='input_text _select' id='#{id}_text' tabindex='11' /><input type='submit' class='input_submit' value='Add' tabindex='12' />");
+ipb.editor_values.get('templates')['togglesource'] = new Template("<fieldset id='#{id}_ts_controls' class='submit' style='text-align: left'><input type='button' class='input_submit' value='Update' id='#{id}_ts_update' />&nbsp;&nbsp;&nbsp; <a href='#' id='#{id}_ts_cancel' class='cancel'>Cancel Source Edit</a></fieldset>");
+	
+ipb.editor_values.get('templates')['toolbar'] = new Template("<ul id='#{id}_toolbar_#{toolbarid}' class='toolbar' style='display: none'>#{content}</ul>");
+ipb.editor_values.get('templates')['button'] = new Template("<li><span id='#{id}_cmd_custom_#{cmd}' class='rte_control rte_button specialitem' title='#{title}'><img src='http://cdn.dreamincode.net/forums/public/style_images/DIC/rte_icons/#{img}' alt='Icon' /></span></li>");
+ipb.editor_values.get('templates')['menu_item'] = new Template("<li id='#{id}_cmd_custom_#{cmd}' class='specialitem clickable'>#{title}</li>");
+ipb.editor_values.get('templates')['togglesource'] = new Template("<fieldset id='#{id}_ts_controls' class='submit' style='text-align: left'><input type='button' class='input_submit' value='Update' id='#{id}_ts_update' />&nbsp;&nbsp;&nbsp; <a href='#' id='#{id}_ts_cancel' class='cancel'>Cancel Source Edit</a></fieldset>");
+ipb.editor_values.get('templates')['emoticons_showall'] = new Template("<input class='input_submit emoticons' type='button' id='#{id}_all_emoticons' value='Show all emoticons' />");
+ipb.editor_values.get('templates')['emoticon_wrapper'] = new Template("<h4><span>Emoticons</span></h4><div id='#{id}_emoticon_holder' class='emoticon_holder'></div>");
+
+// Add smilies into the mix
+ipb.editor_values.set( 'show_emoticon_link', false );
+
+ipb.editor_values.set( 'bbcodes', $H({"snapback":{"id":"1","title":"Post Snap Back","desc":"This tag displays a little linked image which links back to a post - used when quoting posts from the board. Opens in same window by default.","tag":"snapback","useoption":"0","example":"[snapback]100[/snapback]","switch_option":"0","menu_option_text":"","menu_content_text":"","single_tag":"0","optional_option":"0","image":""},"topic":{"id":"5","title":"Topic Link","desc":"This tag provides an easy way to link to a topic","tag":"topic","useoption":"1","example":"[topic=1]Click me![/topic]","switch_option":"0","menu_option_text":"Enter the topic ID","menu_content_text":"Enter the title for this link","single_tag":"0","optional_option":"0","image":""},"post":{"id":"6","title":"Post Link","desc":"This tag provides an easy way to link to a post.","tag":"post","useoption":"1","example":"[post=1]Click me![/post]","switch_option":"0","menu_option_text":"Enter the Post ID","menu_content_text":"Enter the title for this link","single_tag":"0","optional_option":"0","image":""},"spoiler":{"id":"7","title":"Spoiler","desc":"Spoiler tag","tag":"spoiler","useoption":"0","example":"[spoiler]Some hidden text[/spoiler]","switch_option":"0","menu_option_text":"","menu_content_text":"Enter the text to be masked","single_tag":"0","optional_option":"0","image":""},"acronym":{"id":"8","title":"Acronym","desc":"Allows you to make an acronym that will display a description when moused over","tag":"acronym","useoption":"1","example":"[acronym='Laugh Out Loud']lol[/acronym]","switch_option":"0","menu_option_text":"Enter the description for this acronym (EG: Laugh Out Loud)","menu_content_text":"Enter the acronym (EG: lol)","single_tag":"0","optional_option":"0","image":""},"hr":{"id":"12","title":"Horizontal Rule","desc":"Adds a horizontal rule to separate text","tag":"hr","useoption":"0","example":"[hr]","switch_option":"0","menu_option_text":"","menu_content_text":"","single_tag":"1","optional_option":"0","image":""},"php":{"id":"14","title":"PHP Code","desc":"Allows you to enter PHP code into a formatted/highlighted syntax box","tag":"php","useoption":"0","example":"[php]$variable = true;\n\nprint_r($variable);[/php]","switch_option":"0","menu_option_text":"","menu_content_text":"","single_tag":"0","optional_option":"0","image":""},"html":{"id":"15","title":"HTML Code","desc":"Allows you to enter formatted/syntax-highlighted HTML code","tag":"html","useoption":"0","example":"[html]<body>\n <div class='outer'>\n  <p>Hello World</p>\n </div>\n</body>[/html]","switch_option":"0","menu_option_text":"","menu_content_text":"","single_tag":"0","optional_option":"0","image":""},"sql":{"id":"16","title":"SQL Code","desc":"Allows you to enter formatted/syntax-highlighted SQL code","tag":"sql","useoption":"0","example":"[sql]SELECT p.*, t.* FROM posts p LEFT JOIN topics t ON t.tid=p.topic_id WHERE t.tid=7[/sql]","switch_option":"0","menu_option_text":"","menu_content_text":"","single_tag":"0","optional_option":"0","image":""},"xml":{"id":"17","title":"XML Code","desc":"Allows you to enter formatted/syntax-highlighted XML code","tag":"xml","useoption":"0","example":"[xml]<outer>\n <inner>\n  <tag param='1'>Test</tag>\n </inner>\n</outer>[/xml]","switch_option":"0","menu_option_text":"","menu_content_text":"","single_tag":"0","optional_option":"0","image":""},"member":{"id":"31","title":"Member","desc":"Given a member name, a link is automatically generated to the member's profile","tag":"member","useoption":"1","example":"[member=skyhawk133] runs this site.","switch_option":"0","menu_option_text":"Input Username of Member","menu_content_text":"","single_tag":"1","optional_option":"0","image":"memberbbcode.png"},"extract":{"id":"33","title":"Extract Blog Entry","desc":"This will allow users to define an extract for an entry. Only this piece of the entry will be displayed on the main blog page and will show up in the RSS feed.","tag":"extract","useoption":"0","example":"[extract]This is an example![/extract]","switch_option":"0","menu_option_text":"","menu_content_text":"","single_tag":"0","optional_option":"0","image":""},"blog":{"id":"34","title":"Blog Link","desc":"This tag provides an easy way to link to a blog.","tag":"blog","useoption":"1","example":"[blog=100]Click me![/blog]","switch_option":"0","menu_option_text":"","menu_content_text":"","single_tag":"0","optional_option":"0","image":""},"entry":{"id":"35","title":"Blog Entry Link","desc":"This tag provides an easy way to link to a blog entry.","tag":"entry","useoption":"1","example":"[entry=100]Click me![/entry]","switch_option":"0","menu_option_text":"","menu_content_text":"","single_tag":"0","optional_option":"0","image":""},"twitter":{"id":"36","title":"Twitter","desc":"A tag to link to a user's twitter account","tag":"twitter","useoption":"0","example":"[twitter]userName[/twitter]","switch_option":"0","menu_option_text":"","menu_content_text":"","single_tag":"0","optional_option":"0","image":"twitter.png"},"inline":{"id":"37","title":"Inline Code","desc":"Formats code inline instead of in a seperate code box. ","tag":"inline","useoption":"0","example":"[inline]style=\"font-size: 12px;\"[/inline]","switch_option":"0","menu_option_text":"","menu_content_text":"","single_tag":"0","optional_option":"0","image":""},"il":{"id":"38","title":"Abbreviated Inline (IL)","desc":"Abbreviated version of the [inline] tag. ","tag":"il","useoption":"0","example":"[il]Code Here[/il]","switch_option":"0","menu_option_text":"","menu_content_text":"","single_tag":"0","optional_option":"0","image":"il2.png"},"code":{"id":"41","title":"Code","desc":"Allows you to enter general code","tag":"code","useoption":"1","example":"[code]$text = 'Some long code here';[/code]","switch_option":"0","menu_option_text":"","menu_content_text":"","single_tag":"0","optional_option":"1","image":""}}) );
+	ipb.vars['emoticon_url'] = "http://cdn.dreamincode.net/forums/public/style_emoticons/default";
+	//Search Setup
+	ipb.vars['search_type']			= 'forum';
+	ipb.vars['search_type_id']		= 28;
+	ipb.vars['search_type_2']		= 'topic';
+	ipb.vars['search_type_id_2']	= 250097;
+//]]>
+</script>
+
+
+
+<div class="topic_controls">
+        <h1 style="font-size: 20px; font-weight: bolder; text-transform:capitalize; margin-top: -15px; margin-bottom: 10px;"><a href="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/Edit Data In Database Using Php - PHP   Dream.In.Code.htm" style="text-decoration: none;">edit data in database using php</a></h1>			
+				
+			
+		
+	<span class="pagination no_pages left">Page 1 of 1</span>
+
+					<ul class="topic_buttons">
+			
+				<li><a href="http://www.dreamincode.net/forums/index.php?app=core&module=global&section=register&coppa_user=&termsread=1&coppa_pass=1&agree_to_terms=1" title="New Topic/Question" accesskey="n"><img src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/page_white_add.png" alt=""> New Topic/Question</a></li>
+			
+			
+						<li><a href="http://www.dreamincode.net/forums/index.php?app=forums&module=post&section=post&do=reply_post&f=28&t=250097" title="Reply" accesskey="r"><img src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/arrow_rotate_clockwise.png" alt="Reply"> Reply</a></li>
+					
+			
+		</ul>
+	</div>
+<div class="topic hfeed">
+	<h2 class="maintitle">
+		        <span style="color: #CCC; font-weight: bold; font-size: 14px;">5 Replies - 17942 Views - Last Post: 06 October 2011 - 02:31 PM</span>
+		<!-- SKINNOTE: Need to fill in proper URL for topic rating -->
+		<span class="rating">Rate Topic:
+				<a href="http://www.dreamincode.net/forums/index.php?app=forums&module=extras&section=rating&t=250097&rating=1" id="topic_rate_1" title="Rate topic 1 star"><img src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/bullet_star_off.png" alt="-" class="rate_img"></a><a href="http://www.dreamincode.net/forums/index.php?app=forums&module=extras&section=rating&t=250097&rating=2" id="topic_rate_2" title="Rate topic 2 stars"><img src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/bullet_star_off.png" alt="-" class="rate_img"></a><a href="http://www.dreamincode.net/forums/index.php?app=forums&module=extras&section=rating&t=250097&rating=3" id="topic_rate_3" title="Rate topic 3 stars"><img src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/bullet_star_off.png" alt="-" class="rate_img"></a><a href="http://www.dreamincode.net/forums/index.php?app=forums&module=extras&section=rating&t=250097&rating=4" id="topic_rate_4" title="Rate topic 4 stars"><img src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/bullet_star_off.png" alt="-" class="rate_img"></a><a href="http://www.dreamincode.net/forums/index.php?app=forums&module=extras&section=rating&t=250097&rating=5" id="topic_rate_5" title="Rate topic 5 stars"><img src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/bullet_star_off.png" alt="-" class="rate_img"></a>
+				<span id="rating_text">
+					
+					
+				</span>
+				<script type="text/javascript">
+				//<![CDATA[
+					rating = new ipb.rating( 'topic_rate_', { 
+										url: 'http://www.dreamincode.net/forums/index.php?app=forums&module=ajax&section=topics&do=rateTopic&t=250097&md5check=' + ipb.vars['secure_hash'],
+										cur_rating: 0,
+										rated: 0,
+										allow_rate: 0,
+										multi_rate: 1,
+										show_rate_text: true
+									  } );
+				//]]>
+				</script>
+			<br>
+
+
+
+
+</span>
+	</h2>
+	
+	
+	
+	
+	
+
+  	<!-- topic header ads  test -->
+
+	
+<!-- skinnote: Posts by ignored users are not hidden, check _ignored -->
+	
+
+
+	
+		 
+    
+		<!--Begin Msg Number 1453410 - 1-->
+		<div class="post_block hentry clear  with_rep" id="post_id_1453410">
+
+
+<!--<div style="font-family: Arial; font-size: 14px; font-weight: bolder; text-align: center; ">
+<a href="http://ad.doubleclick.net/clk;235937818;52709661;v?http://clk.atdmt.com/MRT/go/299049664/direct;wi.1;hi.1/01/" target="_blank" style="color: #0000CC;"><img src="http://cdn.dreamincode.net/home/images/windows_icon.png.pagespeed.ce.8z1Ez4uU32.png">Develop For Windows - A Stage As Big As Your Ideas! - New Devices, New Opportunities</a>
+</div>-->
+
+
+			<a id="entry1453410"></a>
+			
+			
+			
+			
+			<div class="post_wrap">
+				
+					<h3>
+				
+						<span class="post_id">
+							<a href="http://www.dreamincode.net/forums/topic/250097-edit-data-in-database-using-php/page__view__findpost__p__1453410" rel="bookmark" title="Link to post #1">#1</a>
+						</span>
+				<span class="author vcard">
+								<a class="url fn" href="http://www.dreamincode.net/forums/user/547290-maelienel/">maelienel</a>
+								&nbsp;<a href="http://www.dreamincode.net/forums/user/547290-maelienel/page__f__28" class="__user __id547290 __fid28" title="View Profile"><img src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/user_popup.png" alt="Icon"></a>
+					
+								<img src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/user_off.png" alt="User is offline" title="User is offline">
+					
+							</span>
+
+
+				
+					</h3>
+				<div class="author_info">
+					<!--userInfoPane-->
+<ul class="user_details">
+		
+			<li class="avatar"><a href="http://www.dreamincode.net/forums/user/547290-maelienel/" title="View Profile"><img src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/be0ddb803cf58fdd381f168cf296983c" alt=""></a></li>
+		
+		
+			<li class="title">New D.I.C Head</li>
+		
+		
+	</ul>
+	<br>
+		
+		
+		
+			<div class="reputation zero">
+		
+		<span class="number">Reputation: 0</span>
+			</div>
+	<div style="margin: 0 auto;">
+		<ul class="user_controls clear">
+			
+			
+			
+				<li><a href="http://www.dreamincode.net/forums/index.php?app=blog&module=display&section=blog&mid=547290" title="View blog"><img src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/book_open.png" alt="View blog"></a></li>
+			
+			
+		</ul>
+	</div>
+	<ul class="user_fields">
+                
+		
+			<li>
+				<span class="ft">Posts:</span>
+				<span class="fc">10</span>
+			</li>
+			<li>
+				<span class="ft">Joined:</span>
+				<span class="fc">21-September 11</span>
+			</li>
+		
+	</ul>   
+			
+	
+<!--userInfoPane-->
+				</div>
+				<div class="post_body">
+
+
+                                <h1 class="entry-title">edit data in database using php</h1>
+
+
+					<p class="posted_info">
+						
+						
+						Posted <abbr class="published updated" title="2011-10-06T11:26:13+00:00">06 October 2011 - 04:26 AM</abbr>
+					</p>
+					
+					<div class="post entry-content" id="">
+						<!--cached-Sun, 06 Apr 2014 04:12:18 +0000--><strong class="bbc">i want to edit the data in my database using php.here is my code but the error is if i submit the data that i edit it didn't update to my database..thank you..</strong><br>
+<br>
+<br>
+<br>
+<strong class="bbc">//list_records.php</strong><br>
+<div id="highlighter_88557" class="syntaxhighlighter  "><div class="bar"><div class="toolbar"><a href="http://www.dreamincode.net/forums/topic/250097-edit-data-in-database-using-php/#viewSource" title="view source" class="item viewSource" style="width: 16px; height: 16px;">view source</a><div class="item copyToClipboard"><embed width="16" height="16" id="highlighter_88557_clipboard" type="application/x-shockwave-flash" title="copy to clipboard" allowscriptaccess="always" wmode="transparent" flashvars="highlighterId=highlighter_88557" menu="false" src="http://cdn.dreamincode.net/syntax/scripts/clipboard.swf"></div><a href="http://www.dreamincode.net/forums/topic/250097-edit-data-in-database-using-php/#printSource" title="print" class="item printSource" style="width: 16px; height: 16px;">print</a><a href="http://www.dreamincode.net/forums/topic/250097-edit-data-in-database-using-php/#about" title="?" class="item about" style="width: 16px; height: 16px;">?</a></div></div><div class="lines"><div class="line alt1"><table><tbody><tr><td class="number"><code>01</code></td><td class="content"><code class="plain">&lt;?php</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>02</code></td><td class="content"><code class="variable">$host</code><code class="plain">=</code><code class="string">"localhost"</code><code class="plain">; </code><code class="comments">// Host name </code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>03</code></td><td class="content"><code class="variable">$username</code><code class="plain">=</code><code class="string">"root"</code><code class="plain">; </code><code class="comments">// Mysql username </code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>04</code></td><td class="content"><code class="variable">$password</code><code class="plain">=</code><code class="string">""</code><code class="plain">; </code><code class="comments">// Mysql password </code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>05</code></td><td class="content"><code class="variable">$db_name</code><code class="plain">=</code><code class="string">"test"</code><code class="plain">; </code><code class="comments">// Database name </code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>06</code></td><td class="content"><code class="variable">$tbl_name</code><code class="plain">=</code><code class="string">"test_mysql"</code><code class="plain">; </code><code class="comments">// Table name</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>07</code></td><td class="content">&nbsp;</td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>08</code></td><td class="content"><code class="comments">// Connect to server and select database.</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>09</code></td><td class="content"><code class="plain">mysql_connect(</code><code class="string">"$host"</code><code class="plain">, </code><code class="string">"$username"</code><code class="plain">, </code><code class="string">"$password"</code><code class="plain">)</code><code class="keyword">or</code> <code class="keyword">die</code><code class="plain">(</code><code class="string">"cannot connect"</code><code class="plain">); </code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>10</code></td><td class="content"><code class="plain">mysql_select_db(</code><code class="string">"$db_name"</code><code class="plain">)</code><code class="keyword">or</code> <code class="keyword">die</code><code class="plain">(</code><code class="string">"cannot select DB"</code><code class="plain">);</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>11</code></td><td class="content">&nbsp;</td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>12</code></td><td class="content"><code class="variable">$sql</code><code class="plain">=</code><code class="string">"SELECT * FROM $tbl_name"</code><code class="plain">;</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>13</code></td><td class="content"><code class="variable">$result</code><code class="plain">=mysql_query(</code><code class="variable">$sql</code><code class="plain">);</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>14</code></td><td class="content"><code class="plain">?&gt;</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>15</code></td><td class="content"><code class="plain">&lt;table width=</code><code class="string">"400"</code> <code class="plain">border=</code><code class="string">"0"</code> <code class="plain">cellspacing=</code><code class="string">"1"</code> <code class="plain">cellpadding=</code><code class="string">"0"</code><code class="plain">&gt;</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>16</code></td><td class="content"><code class="plain">&lt;tr&gt;</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>17</code></td><td class="content"><code class="plain">&lt;td&gt;</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>18</code></td><td class="content"><code class="plain">&lt;table width=</code><code class="string">"400"</code> <code class="plain">border=</code><code class="string">"1"</code> <code class="plain">cellspacing=</code><code class="string">"0"</code> <code class="plain">cellpadding=</code><code class="string">"3"</code><code class="plain">&gt;</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>19</code></td><td class="content"><code class="plain">&lt;tr&gt;</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>20</code></td><td class="content"><code class="plain">&lt;td colspan=</code><code class="string">"4"</code><code class="plain">&gt;&lt;strong&gt;List data from mysql &lt;/strong&gt; &lt;/td&gt;</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>21</code></td><td class="content"><code class="plain">&lt;/tr&gt;</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>22</code></td><td class="content">&nbsp;</td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>23</code></td><td class="content"><code class="plain">&lt;tr&gt;</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>24</code></td><td class="content"><code class="plain">&lt;td align=</code><code class="string">"center"</code><code class="plain">&gt;&lt;strong&gt;Name&lt;/strong&gt;&lt;/td&gt;</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>25</code></td><td class="content"><code class="plain">&lt;td align=</code><code class="string">"center"</code><code class="plain">&gt;&lt;strong&gt;Lastname&lt;/strong&gt;&lt;/td&gt;</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>26</code></td><td class="content"><code class="plain">&lt;td align=</code><code class="string">"center"</code><code class="plain">&gt;&lt;strong&gt;Email&lt;/strong&gt;&lt;/td&gt;</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>27</code></td><td class="content"><code class="plain">&lt;td align=</code><code class="string">"center"</code><code class="plain">&gt;&lt;strong&gt;Update&lt;/strong&gt;&lt;/td&gt;</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>28</code></td><td class="content"><code class="plain">&lt;/tr&gt;</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>29</code></td><td class="content"><code class="plain">&lt;?php</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>30</code></td><td class="content"><code class="keyword">while</code><code class="plain">(</code><code class="variable">$rows</code><code class="plain">=mysql_fetch_array(</code><code class="variable">$result</code><code class="plain">)){</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>31</code></td><td class="content"><code class="plain">?&gt;</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>32</code></td><td class="content"><code class="plain">&lt;tr&gt;</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>33</code></td><td class="content"><code class="plain">&lt;td&gt;&lt;? </code><code class="functions">echo</code> <code class="variable">$rows</code><code class="plain">[</code><code class="string">'name'</code><code class="plain">]; ?&gt;&lt;/td&gt;</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>34</code></td><td class="content"><code class="plain">&lt;td&gt;&lt;? </code><code class="functions">echo</code> <code class="variable">$rows</code><code class="plain">[</code><code class="string">'lastname'</code><code class="plain">]; ?&gt;&lt;/td&gt;</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>35</code></td><td class="content"><code class="plain">&lt;td&gt;&lt;? </code><code class="functions">echo</code> <code class="variable">$rows</code><code class="plain">[</code><code class="string">'email'</code><code class="plain">]; ?&gt;&lt;/td&gt;</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>36</code></td><td class="content">&nbsp;</td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>37</code></td><td class="content">&nbsp;</td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>38</code></td><td class="content"><code class="plain">&lt;td align=</code><code class="string">"center"</code><code class="plain">&gt;&lt;a href=</code><code class="string">"update.php?id=&lt;? echo $rows['id']; ?&gt;"</code><code class="plain">&gt;update&lt;/a&gt;&lt;/td&gt;</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>39</code></td><td class="content"><code class="plain">&lt;/tr&gt;</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>40</code></td><td class="content"><code class="plain">&lt;?php</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>41</code></td><td class="content"><code class="plain">}</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>42</code></td><td class="content"><code class="plain">?&gt;</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>43</code></td><td class="content"><code class="plain">&lt;/table&gt;</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>44</code></td><td class="content"><code class="plain">&lt;/td&gt;</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>45</code></td><td class="content"><code class="plain">&lt;/tr&gt;</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>46</code></td><td class="content"><code class="plain">&lt;/table&gt;</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>47</code></td><td class="content"><code class="plain">&lt;?php</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>48</code></td><td class="content">&nbsp;</td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>49</code></td><td class="content"><code class="plain">mysql_close();</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>50</code></td><td class="content"><code class="plain">?&gt;</code></td></tr></tbody></table></div></div></div><br>
+ <br>
+//<strong class="bbc">update.php</strong><br>
+<div id="highlighter_80305" class="syntaxhighlighter  "><div class="bar"><div class="toolbar"><a href="http://www.dreamincode.net/forums/topic/250097-edit-data-in-database-using-php/#viewSource" title="view source" class="item viewSource" style="width: 16px; height: 16px;">view source</a><div class="item copyToClipboard"><embed width="16" height="16" id="highlighter_80305_clipboard" type="application/x-shockwave-flash" title="copy to clipboard" allowscriptaccess="always" wmode="transparent" flashvars="highlighterId=highlighter_80305" menu="false" src="http://cdn.dreamincode.net/syntax/scripts/clipboard.swf"></div><a href="http://www.dreamincode.net/forums/topic/250097-edit-data-in-database-using-php/#printSource" title="print" class="item printSource" style="width: 16px; height: 16px;">print</a><a href="http://www.dreamincode.net/forums/topic/250097-edit-data-in-database-using-php/#about" title="?" class="item about" style="width: 16px; height: 16px;">?</a></div></div><div class="lines"><div class="line alt1"><table><tbody><tr><td class="number"><code>01</code></td><td class="content"><code class="plain">&lt;?php</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>02</code></td><td class="content"><code class="variable">$host</code><code class="plain">=</code><code class="string">"localhost"</code><code class="plain">; </code><code class="comments">// Host name </code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>03</code></td><td class="content"><code class="variable">$username</code><code class="plain">=</code><code class="string">"root"</code><code class="plain">; </code><code class="comments">// Mysql username </code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>04</code></td><td class="content"><code class="variable">$password</code><code class="plain">=</code><code class="string">""</code><code class="plain">; </code><code class="comments">// Mysql password </code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>05</code></td><td class="content"><code class="variable">$db_name</code><code class="plain">=</code><code class="string">"test"</code><code class="plain">; </code><code class="comments">// Database name </code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>06</code></td><td class="content"><code class="variable">$tbl_name</code><code class="plain">=</code><code class="string">"test_mysql"</code><code class="plain">; </code><code class="comments">// Table name</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>07</code></td><td class="content">&nbsp;</td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>08</code></td><td class="content"><code class="comments">// Connect to server and select database.</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>09</code></td><td class="content"><code class="plain">mysql_connect(</code><code class="string">"$host"</code><code class="plain">, </code><code class="string">"$username"</code><code class="plain">, </code><code class="string">"$password"</code><code class="plain">)</code><code class="keyword">or</code> <code class="keyword">die</code><code class="plain">(</code><code class="string">"cannot connect"</code><code class="plain">); </code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>10</code></td><td class="content"><code class="plain">mysql_select_db(</code><code class="string">"$db_name"</code><code class="plain">)</code><code class="keyword">or</code> <code class="keyword">die</code><code class="plain">(</code><code class="string">"cannot select DB"</code><code class="plain">);</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>11</code></td><td class="content">&nbsp;</td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>12</code></td><td class="content"><code class="comments">// get value of id that sent from address bar</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>13</code></td><td class="content"><code class="variable">$id</code><code class="plain">=</code><code class="variable">$_GET</code><code class="plain">[</code><code class="string">'id'</code><code class="plain">];</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>14</code></td><td class="content">&nbsp;</td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>15</code></td><td class="content">&nbsp;</td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>16</code></td><td class="content"><code class="comments">// Retrieve data from database </code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>17</code></td><td class="content"><code class="variable">$sql</code><code class="plain">=</code><code class="string">"SELECT * FROM $tbl_name WHERE id='$id'"</code><code class="plain">;</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>18</code></td><td class="content"><code class="variable">$result</code><code class="plain">=mysql_query(</code><code class="variable">$sql</code><code class="plain">);</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>19</code></td><td class="content">&nbsp;</td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>20</code></td><td class="content"><code class="variable">$rows</code><code class="plain">=mysql_fetch_array(</code><code class="variable">$result</code><code class="plain">);</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>21</code></td><td class="content"><code class="plain">?&gt;</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>22</code></td><td class="content"><code class="plain">&lt;table width=</code><code class="string">"400"</code> <code class="plain">border=</code><code class="string">"0"</code> <code class="plain">cellspacing=</code><code class="string">"1"</code> <code class="plain">cellpadding=</code><code class="string">"0"</code><code class="plain">&gt;</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>23</code></td><td class="content"><code class="plain">&lt;tr&gt;</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>24</code></td><td class="content"><code class="plain">&lt;form name=</code><code class="string">"form1"</code> <code class="plain">method=</code><code class="string">"post"</code> <code class="plain">action=</code><code class="string">"update_ac.php"</code><code class="plain">&gt;</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>25</code></td><td class="content"><code class="plain">&lt;td&gt;</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>26</code></td><td class="content"><code class="plain">&lt;table width=</code><code class="string">"100%"</code> <code class="plain">border=</code><code class="string">"0"</code> <code class="plain">cellspacing=</code><code class="string">"1"</code> <code class="plain">cellpadding=</code><code class="string">"0"</code><code class="plain">&gt;</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>27</code></td><td class="content"><code class="plain">&lt;tr&gt;</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>28</code></td><td class="content"><code class="plain">&lt;td&gt;&amp;nbsp;&lt;/td&gt;</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>29</code></td><td class="content"><code class="plain">&lt;td colspan=</code><code class="string">"3"</code><code class="plain">&gt;&lt;strong&gt;Update data in mysql&lt;/strong&gt; &lt;/td&gt;</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>30</code></td><td class="content"><code class="plain">&lt;/tr&gt;</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>31</code></td><td class="content"><code class="plain">&lt;tr&gt;</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>32</code></td><td class="content"><code class="plain">&lt;td align=</code><code class="string">"center"</code><code class="plain">&gt;&amp;nbsp;&lt;/td&gt;</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>33</code></td><td class="content"><code class="plain">&lt;td align=</code><code class="string">"center"</code><code class="plain">&gt;&amp;nbsp;&lt;/td&gt;</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>34</code></td><td class="content"><code class="plain">&lt;td align=</code><code class="string">"center"</code><code class="plain">&gt;&amp;nbsp;&lt;/td&gt;</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>35</code></td><td class="content"><code class="plain">&lt;td align=</code><code class="string">"center"</code><code class="plain">&gt;&amp;nbsp;&lt;/td&gt;</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>36</code></td><td class="content"><code class="plain">&lt;/tr&gt;</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>37</code></td><td class="content"><code class="plain">&lt;tr&gt;</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>38</code></td><td class="content"><code class="plain">&lt;td align=</code><code class="string">"center"</code><code class="plain">&gt;&amp;nbsp;&lt;/td&gt;</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>39</code></td><td class="content"><code class="plain">&lt;td align=</code><code class="string">"center"</code><code class="plain">&gt;&lt;strong&gt;Name&lt;/strong&gt;&lt;/td&gt;</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>40</code></td><td class="content"><code class="plain">&lt;td align=</code><code class="string">"center"</code><code class="plain">&gt;&lt;strong&gt;Lastname&lt;/strong&gt;&lt;/td&gt;</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>41</code></td><td class="content"><code class="plain">&lt;td align=</code><code class="string">"center"</code><code class="plain">&gt;&lt;strong&gt;Email&lt;/strong&gt;&lt;/td&gt;</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>42</code></td><td class="content"><code class="plain">&lt;/tr&gt;</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>43</code></td><td class="content"><code class="plain">&lt;tr&gt;</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>44</code></td><td class="content"><code class="plain">&lt;td&gt;&amp;nbsp;&lt;/td&gt;</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>45</code></td><td class="content"><code class="plain">&lt;td align=</code><code class="string">"center"</code><code class="plain">&gt;&lt;input name=</code><code class="string">"name"</code> <code class="plain">type=</code><code class="string">"text"</code> <code class="plain">id=</code><code class="string">"name"</code> <code class="plain">value=</code><code class="string">"&lt;? echo $rows['name']; ?&gt;"</code><code class="plain">&gt;&lt;/td&gt;</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>46</code></td><td class="content"><code class="plain">&lt;td align=</code><code class="string">"center"</code><code class="plain">&gt;&lt;input name=</code><code class="string">"lastname"</code> <code class="plain">type=</code><code class="string">"text"</code> <code class="plain">id=</code><code class="string">"lastname"</code> <code class="plain">value=</code><code class="string">"&lt;? echo $rows['lastname']; ?&gt;"</code> <code class="plain">size=</code><code class="string">"15"</code><code class="plain">&gt;&lt;/td&gt;</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>47</code></td><td class="content"><code class="plain">&lt;td&gt;&lt;input name=</code><code class="string">"email"</code> <code class="plain">type=</code><code class="string">"text"</code> <code class="plain">id=</code><code class="string">"email"</code> <code class="plain">value=</code><code class="string">"&lt;? echo $rows['email']; ?&gt;"</code> <code class="plain">size=</code><code class="string">"15"</code><code class="plain">&gt;&lt;/td&gt;</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>48</code></td><td class="content"><code class="plain">&lt;/tr&gt;</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>49</code></td><td class="content"><code class="plain">&lt;tr&gt;</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>50</code></td><td class="content"><code class="plain">&lt;td&gt;&amp;nbsp;&lt;/td&gt;</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>51</code></td><td class="content"><code class="plain">&lt;td&gt;&lt;input name=</code><code class="string">"id"</code> <code class="plain">type=</code><code class="string">"hidden"</code> <code class="plain">id=</code><code class="string">"id"</code> <code class="plain">value=</code><code class="string">"&lt;? echo $rows['id']; ?&gt;"</code><code class="plain">&gt;&lt;/td&gt;</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>52</code></td><td class="content"><code class="plain">&lt;td align=</code><code class="string">"center"</code><code class="plain">&gt;&lt;input type=</code><code class="string">"submit"</code> <code class="plain">name=</code><code class="string">"Submit"</code> <code class="plain">value=</code><code class="string">"Submit"</code><code class="plain">&gt;&lt;/td&gt;</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>53</code></td><td class="content"><code class="plain">&lt;td&gt;&amp;nbsp;&lt;/td&gt;</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>54</code></td><td class="content"><code class="plain">&lt;/tr&gt;</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>55</code></td><td class="content"><code class="plain">&lt;/table&gt;</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>56</code></td><td class="content"><code class="plain">&lt;/td&gt;</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>57</code></td><td class="content"><code class="plain">&lt;/form&gt;</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>58</code></td><td class="content"><code class="plain">&lt;/tr&gt;</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>59</code></td><td class="content"><code class="plain">&lt;/table&gt;</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>60</code></td><td class="content">&nbsp;</td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>61</code></td><td class="content"><code class="plain">&lt;?php</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>62</code></td><td class="content">&nbsp;</td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>63</code></td><td class="content"><code class="comments">// close connection </code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>64</code></td><td class="content"><code class="plain">mysql_close();</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>65</code></td><td class="content">&nbsp;</td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>66</code></td><td class="content"><code class="plain">?&gt;</code></td></tr></tbody></table></div></div></div><br>
+<br>
+//<strong class="bbc">update_ac.php</strong><br>
+&lt;<div id="highlighter_195813" class="syntaxhighlighter  "><div class="bar                          "><div class="toolbar"><a href="http://www.dreamincode.net/forums/topic/250097-edit-data-in-database-using-php/#viewSource" title="view source" class="item viewSource" style="width: 16px; height: 16px;">view source</a><div class="item copyToClipboard"><embed width="16" height="16" id="highlighter_195813_clipboard" type="application/x-shockwave-flash" title="copy to clipboard" allowscriptaccess="always" wmode="transparent" flashvars="highlighterId=highlighter_195813" menu="false" src="http://cdn.dreamincode.net/syntax/scripts/clipboard.swf"></div><a href="http://www.dreamincode.net/forums/topic/250097-edit-data-in-database-using-php/#printSource" title="print" class="item printSource" style="width: 16px; height: 16px;">print</a><a href="http://www.dreamincode.net/forums/topic/250097-edit-data-in-database-using-php/#about" title="?" class="item about" style="width: 16px; height: 16px;">?</a></div></div><div class="lines"><div class="line alt1"><table><tbody><tr><td class="number"><code>01</code></td><td class="content"><code class="plain">?php</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>02</code></td><td class="content"><code class="variable">$host</code><code class="plain">=</code><code class="string">"localhost"</code><code class="plain">; </code><code class="comments">// Host name </code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>03</code></td><td class="content"><code class="variable">$username</code><code class="plain">=</code><code class="string">"root"</code><code class="plain">; </code><code class="comments">// Mysql username </code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>04</code></td><td class="content"><code class="variable">$password</code><code class="plain">=</code><code class="string">""</code><code class="plain">; </code><code class="comments">// Mysql password </code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>05</code></td><td class="content"><code class="variable">$db_name</code><code class="plain">=</code><code class="string">"test"</code><code class="plain">; </code><code class="comments">// Database name </code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>06</code></td><td class="content"><code class="variable">$tbl_name</code><code class="plain">=</code><code class="string">"test_mysql"</code><code class="plain">; </code><code class="comments">// Table name</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>07</code></td><td class="content">&nbsp;</td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>08</code></td><td class="content"><code class="variable">$id</code><code class="plain">=</code><code class="variable">$_POST</code><code class="plain">[</code><code class="string">'ud_id'</code><code class="plain">];</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>09</code></td><td class="content"><code class="variable">$name</code><code class="plain">=</code><code class="variable">$_POST</code><code class="plain">[</code><code class="string">'name'</code><code class="plain">];</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>10</code></td><td class="content"><code class="variable">$lastname</code><code class="plain">=</code><code class="variable">$_POST</code><code class="plain">[</code><code class="string">'lastname'</code><code class="plain">];</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>11</code></td><td class="content"><code class="variable">$email</code><code class="plain">=</code><code class="variable">$_POST</code><code class="plain">[</code><code class="string">'email'</code><code class="plain">];</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>12</code></td><td class="content">&nbsp;</td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>13</code></td><td class="content"><code class="comments">// Connect to server and select database.</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>14</code></td><td class="content"><code class="plain">mysql_connect(</code><code class="string">"$host"</code><code class="plain">, </code><code class="string">"$username"</code><code class="plain">, </code><code class="string">"$password"</code><code class="plain">)</code><code class="keyword">or</code> <code class="keyword">die</code><code class="plain">(</code><code class="string">"cannot connect"</code><code class="plain">); </code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>15</code></td><td class="content"><code class="plain">mysql_select_db(</code><code class="string">"$db_name"</code><code class="plain">)</code><code class="keyword">or</code> <code class="keyword">die</code><code class="plain">(</code><code class="string">"cannot select DB"</code><code class="plain">);</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>16</code></td><td class="content">&nbsp;</td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>17</code></td><td class="content"><code class="comments">// update data in mysql database </code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>18</code></td><td class="content"><code class="variable">$sql</code><code class="plain">=</code><code class="string">"UPDATE $tbl_name SET name='$name', lastname='$lastname', email='$email' WHERE id='$id'"</code><code class="plain">;</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>19</code></td><td class="content">&nbsp;</td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>20</code></td><td class="content"><code class="variable">$result</code><code class="plain">=mysql_query(</code><code class="variable">$sql</code><code class="plain">);</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>21</code></td><td class="content"><code class="plain">mysql_query(</code><code class="variable">$query</code><code class="plain">);</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>22</code></td><td class="content"><code class="comments">// if successfully updated. </code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>23</code></td><td class="content"><code class="keyword">if</code><code class="plain">(</code><code class="variable">$result</code><code class="plain">){</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>24</code></td><td class="content"><code class="functions">echo</code> <code class="string">"Successful"</code><code class="plain">;</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>25</code></td><td class="content"><code class="functions">echo</code> <code class="string">"&lt;BR&gt;"</code><code class="plain">;</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>26</code></td><td class="content"><code class="functions">echo</code> <code class="string">"&lt;a href='list_records.php'&gt;View result&lt;/a&gt;"</code><code class="plain">;</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>27</code></td><td class="content"><code class="plain">}</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>28</code></td><td class="content">&nbsp;</td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>29</code></td><td class="content"><code class="keyword">else</code> <code class="plain">{</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>30</code></td><td class="content"><code class="functions">echo</code> <code class="string">"ERROR"</code><code class="plain">;</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>31</code></td><td class="content"><code class="plain">}</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>32</code></td><td class="content">&nbsp;</td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>33</code></td><td class="content"><code class="plain">?&gt;</code></td></tr></tbody></table></div></div></div>
+						
+						<br>
+						<p class="edit">
+								This post has been edited by <b>JackOfAllTrades</b>: 06 October 2011 - 04:42 AM
+								
+									<br>
+									<span class="reason">Reason for edit:: Added code tags</span>
+								
+							</p>
+					</div>
+					
+
+
+                                <div id="div-gpt-ad-1326943007260-1" style="padding-left: 15px;">
+				
+
+<!-- begin ad tag (tile=2) -->
+<script type="text/javascript">
+//<![CDATA[
+ord = window.ord || Math.floor(Math.random()*1E16);
+document.write('<script type="text/javascript" src="http://ad2.netshelter.net/adj/ns.dreamincode/general;ppos=btf;kw=;tile=2;sz=300x250;ord=' + ord + '?"><\/script>');
+//]]>
+</script><script type="text/javascript" src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/general;ppos=btf;kw=;tile=2;sz=300x250"></script><script type="text/javascript" src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/300x250_BTF_NetShelter_Backup.js"></script><script type="text/javascript" src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/ads(1)"></script><div id="div-gpt-ad-1326943007260-1_ad_container"><div data-type="ad" data-publisher="lqm.dreamincode.site" data-zone="ron" data-format="300x250"><iframe id="dmad2" allowtransparency="false" style="z-index:10" width="300" height="250" marginwidth="0" marginheight="0" frameborder="0" scrolling="no"></iframe></div>
+
+<script type="text/javascript">
+    function _dmBootstrap(file) {
+        var _dma = document.createElement('script'); 
+        _dma.type = 'text/javascript';
+        _dma.async = true; 
+        _dma.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + file;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(_dma);
+    }
+    function _dmFollowup(file) { if (typeof DMAds === 'undefined')  _dmBootstrap('cdn2.DeveloperMedia.com/a.min.js');}
+    (function () { _dmBootstrap('cdn1.DeveloperMedia.com/a.min.js'); setTimeout(_dmFollowup, 2000);})();
+</script>
+ 
+</div>
+
+
+<noscript>&lt;a href="http://ad2.netshelter.net/jump/ns.dreamincode/general;ppos=btf;kw=;tile=2;sz=300x250;ord=123456789?" target="_blank" &gt;&lt;img src="http://ad2.netshelter.net/ad/ns.dreamincode/general;ppos=btf;kw=;tile=2;sz=300x250;ord=123456789?" border="0" alt="" /&gt;&lt;/a&gt;</noscript>
+<!-- end ad tag -->
+
+</div>
+<br>
+
+				</div>
+			<div class="rep_bar clear right" id="rep_post_1453410"><span style="float: left; margin-top: 10px; font-weight: bold;">
+
+Is This A Good Question/Topic?
+
+</span>
+					
+												
+				
+					<span class="reputation zero rep_show clickable" title="Reputation" onclick="ipb.topic.repPopUp( this, 1453410 );">
+				
+				
+				
+						0
+					</span>
+<!-- REMOVED From Below: AND Array['member_id'] != 0 -->
+					<ul>
+						
+							<li><a href="http://www.dreamincode.net/forums/topic/250097-edit-data-in-database-using-php/#" class="rep_up" title="Vote this post up"><img src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/add.png" alt="+"></a></li>
+						
+						
+						</ul>
+				</div>
+				<script type="text/javascript">
+					ipb.global.registerReputation( 'rep_post_1453410', { app: 'forums', type: 'pid', typeid: '1453410' }, parseInt('0') );
+				</script>
+				<ul class="post_controls">
+					
+					<li class="top hide"><a href="http://www.dreamincode.net/forums/topic/250097-edit-data-in-database-using-php/#top" class="top" title="Back to top">Back to top</a></li>
+					
+					
+						<li class="multiquote" id="multiq_1453410" style="">
+					
+							<a href="http://www.dreamincode.net/forums/index.php?app=forums&module=post&section=post&do=reply_post&f=28&t=250097&qpid=1453410" title="Quote this post with Multi-Quote"><img src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/comment_add.png" alt="Reply Icon"> MultiQuote</a>
+						</li>
+					<li><a href="http://www.dreamincode.net/forums/index.php?app=forums&module=post&section=post&do=reply_post&f=28&t=250097&qpid=1453410" title="Reply directly to this post"><img src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/comment_add.png" alt="Reply Icon"> Quote + Reply</a></li>
+					
+					
+					<!-- Matt: Approve / unapprove post button -->
+					
+				</ul>
+				<script type="text/javascript">
+					// Show multiquote for JS browsers
+					$('multiq_1453410').show();
+					
+					if( $('toggle_post_1453410') )
+					{
+						$('toggle_post_1453410').show();
+					}
+				</script>
+				
+			</div>
+		<!-- </if> -->			
+		</div>
+		
+		<hr>
+		
+	
+
+
+
+	
+		
+<h2 class="maintitle">
+		<strong>Replies To:</strong> edit data in database using php
+</h2>	
+     
+    
+		<!--Begin Msg Number 1453414 - 2-->
+		<div class="post_block hentry clear  with_rep" id="post_id_1453414">
+
+
+
+			<a id="entry1453414"></a>
+			
+			
+			
+			
+			<div class="post_wrap">
+				
+					<h3>
+				
+						<span class="post_id">
+							<a href="http://www.dreamincode.net/forums/topic/250097-edit-data-in-database-using-php/page__view__findpost__p__1453414" rel="bookmark" title="Link to post #2">#2</a>
+						</span>
+				<span class="author vcard">
+								<a class="url fn" href="http://www.dreamincode.net/forums/user/106641-jackofalltrades/">JackOfAllTrades</a>
+								&nbsp;<a href="http://www.dreamincode.net/forums/user/106641-jackofalltrades/page__f__28" class="__user __id106641 __fid28" title="View Profile"><img src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/user_popup.png" alt="Icon"></a>
+					
+								<img src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/user_off.png" alt="User is offline" title="User is offline">
+					
+							</span>
+
+
+				
+					</h3>
+				<div class="author_info">
+					<!--userInfoPane-->
+<ul class="user_details">
+		
+			<li class="avatar"><a href="http://www.dreamincode.net/forums/user/106641-jackofalltrades/" title="View Profile"><img src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/2yoe3jp.gif" width="64" height="64" alt=""></a></li>
+		
+		
+			<li class="title">Saucy!</li>
+		
+		<li class="group_icon">
+			
+				<img src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/moderator_group.gif" alt="member icon">
+			
+			</li>
+	</ul>
+	<br>
+		
+			<div class="reputation positive">
+		
+		
+		
+		<span class="number">Reputation: 5941</span>
+			</div>
+	<div style="margin: 0 auto;">
+		<ul class="user_controls clear">
+			
+			
+			
+				<li><a href="http://www.dreamincode.net/forums/index.php?app=blog&module=display&section=blog&mid=106641" title="View blog"><img src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/book_open.png" alt="View blog"></a></li>
+			
+			
+		</ul>
+	</div>
+	<ul class="user_fields">
+                
+		
+			<li>
+				<span class="ft">Posts:</span>
+				<span class="fc">23,194</span>
+			</li>
+			<li>
+				<span class="ft">Joined:</span>
+				<span class="fc">23-August 08</span>
+			</li>
+		
+	</ul>   
+			
+	
+<!--userInfoPane-->
+				</div>
+				<div class="post_body">
+
+
+  				<h2 class="entry-title">Re: edit data in database using php</h2>
+
+
+					<p class="posted_info">
+						
+						
+						Posted <abbr class="published updated" title="2011-10-06T11:42:20+00:00">06 October 2011 - 04:42 AM</abbr>
+					</p>
+					
+					<div class="post entry-content" id="">
+						<!--cached-Sun, 06 Apr 2014 04:12:18 +0000-->Questions about PHP go in the PHP Forum, not in Site Questions &amp; Feedback!<br>
+<br>
+And when you post code...USE CODE TAGS!!!<br>
+<br>
+<img src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/code.gif" class="bbc_emoticon" alt=":code:"><br>
+<br>
+Moved to PHP
+						
+						<br>
+						
+					</div>
+					
+
+
+				</div>
+			<div class="rep_bar clear right" id="rep_post_1453414"><span style="float: left; margin-top: 10px; font-weight: bold;">
+
+Was This Post Helpful? 
+
+</span>
+					
+												
+				
+					<span class="reputation zero rep_show clickable" title="Reputation" onclick="ipb.topic.repPopUp( this, 1453414 );">
+				
+				
+				
+						0
+					</span>
+<!-- REMOVED From Below: AND Array['member_id'] != 0 -->
+					<ul>
+						
+							<li><a href="http://www.dreamincode.net/forums/topic/250097-edit-data-in-database-using-php/#" class="rep_up" title="Vote this post up"><img src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/add.png" alt="+"></a></li>
+						
+						
+							<li><a href="http://www.dreamincode.net/forums/topic/250097-edit-data-in-database-using-php/#" class="rep_down" title="Vote this post down"><img src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/delete.png" alt="-"></a></li>
+						
+						</ul>
+				</div>
+				<script type="text/javascript">
+					ipb.global.registerReputation( 'rep_post_1453414', { app: 'forums', type: 'pid', typeid: '1453414' }, parseInt('0') );
+				</script>
+				<ul class="post_controls">
+					
+					<li class="top hide"><a href="http://www.dreamincode.net/forums/topic/250097-edit-data-in-database-using-php/#top" class="top" title="Back to top">Back to top</a></li>
+					
+					
+						<li class="multiquote" id="multiq_1453414" style="">
+					
+							<a href="http://www.dreamincode.net/forums/index.php?app=forums&module=post&section=post&do=reply_post&f=28&t=250097&qpid=1453414" title="Quote this post with Multi-Quote"><img src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/comment_add.png" alt="Reply Icon"> MultiQuote</a>
+						</li>
+					<li><a href="http://www.dreamincode.net/forums/index.php?app=forums&module=post&section=post&do=reply_post&f=28&t=250097&qpid=1453414" title="Reply directly to this post"><img src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/comment_add.png" alt="Reply Icon"> Quote + Reply</a></li>
+					
+					
+					<!-- Matt: Approve / unapprove post button -->
+					
+				</ul>
+				<script type="text/javascript">
+					// Show multiquote for JS browsers
+					$('multiq_1453414').show();
+					
+					if( $('toggle_post_1453414') )
+					{
+						$('toggle_post_1453414').show();
+					}
+				</script>
+				
+			</div>
+		<!-- </if> -->			
+		</div>
+		
+		<hr>
+		
+	
+
+
+
+	
+		 
+    
+		<!--Begin Msg Number 1453417 - 3-->
+		<div class="post_block hentry clear  with_rep" id="post_id_1453417">
+
+
+
+			<a id="entry1453417"></a>
+			
+			
+			
+			
+			<div class="post_wrap">
+				
+					<h3>
+				
+						<span class="post_id">
+							<a href="http://www.dreamincode.net/forums/topic/250097-edit-data-in-database-using-php/page__view__findpost__p__1453417" rel="bookmark" title="Link to post #3">#3</a>
+						</span>
+				<span class="author vcard">
+								<a class="url fn" href="http://www.dreamincode.net/forums/user/547290-maelienel/">maelienel</a>
+								&nbsp;<a href="http://www.dreamincode.net/forums/user/547290-maelienel/page__f__28" class="__user __id547290 __fid28" title="View Profile"><img src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/user_popup.png" alt="Icon"></a>
+					
+								<img src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/user_off.png" alt="User is offline" title="User is offline">
+					
+							</span>
+
+
+				
+					</h3>
+				<div class="author_info">
+					<!--userInfoPane-->
+<ul class="user_details">
+		
+			<li class="avatar"><a href="http://www.dreamincode.net/forums/user/547290-maelienel/" title="View Profile"><img src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/be0ddb803cf58fdd381f168cf296983c" alt=""></a></li>
+		
+		
+			<li class="title">New D.I.C Head</li>
+		
+		
+	</ul>
+	<br>
+		
+		
+		
+			<div class="reputation zero">
+		
+		<span class="number">Reputation: 0</span>
+			</div>
+	<div style="margin: 0 auto;">
+		<ul class="user_controls clear">
+			
+			
+			
+				<li><a href="http://www.dreamincode.net/forums/index.php?app=blog&module=display&section=blog&mid=547290" title="View blog"><img src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/book_open.png" alt="View blog"></a></li>
+			
+			
+		</ul>
+	</div>
+	<ul class="user_fields">
+                
+		
+			<li>
+				<span class="ft">Posts:</span>
+				<span class="fc">10</span>
+			</li>
+			<li>
+				<span class="ft">Joined:</span>
+				<span class="fc">21-September 11</span>
+			</li>
+		
+	</ul>   
+			
+	
+<!--userInfoPane-->
+				</div>
+				<div class="post_body">
+
+
+  				<h2 class="entry-title">Re: edit data in database using php</h2>
+
+
+					<p class="posted_info">
+						
+						
+						Posted <abbr class="published updated" title="2011-10-06T11:49:29+00:00">06 October 2011 - 04:49 AM</abbr>
+					</p>
+					
+					<div class="post entry-content" id="">
+						<!--cached-Sun, 06 Apr 2014 04:12:18 +0000--><p class="citation"><a class="snapback" rel="citation" href="http://www.dreamincode.net/forums/index.php?s=20d27e26b344d68e7cf328e8eece8d79&app=forums&module=forums&section=findpost&pid=1453414"><img src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/snapback.png" alt="View Post"></a>JackOfAllTrades, on 06 October 2011 - 04:42 AM, said:</p><div class="blockquote"><div class="quote">Questions about PHP go in the PHP Forum, not in Site Questions &amp; Feedback!<br>
+<br>
+And when you post code...USE CODE TAGS!!!<br>
+<br>
+<img src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/code.gif" class="bbc_emoticon" alt=":code:"><br>
+<br>
+Moved to PHP</div></div><br>
+<br>
+<br>
+Sorry.. please what should i do to update database?
+						
+						<br>
+						
+					</div>
+					
+
+
+				</div>
+			<div class="rep_bar clear right" id="rep_post_1453417"><span style="float: left; margin-top: 10px; font-weight: bold;">
+
+Was This Post Helpful? 
+
+</span>
+					
+												
+				
+					<span class="reputation zero rep_show clickable" title="Reputation" onclick="ipb.topic.repPopUp( this, 1453417 );">
+				
+				
+				
+						0
+					</span>
+<!-- REMOVED From Below: AND Array['member_id'] != 0 -->
+					<ul>
+						
+							<li><a href="http://www.dreamincode.net/forums/topic/250097-edit-data-in-database-using-php/#" class="rep_up" title="Vote this post up"><img src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/add.png" alt="+"></a></li>
+						
+						
+							<li><a href="http://www.dreamincode.net/forums/topic/250097-edit-data-in-database-using-php/#" class="rep_down" title="Vote this post down"><img src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/delete.png" alt="-"></a></li>
+						
+						</ul>
+				</div>
+				<script type="text/javascript">
+					ipb.global.registerReputation( 'rep_post_1453417', { app: 'forums', type: 'pid', typeid: '1453417' }, parseInt('0') );
+				</script>
+				<ul class="post_controls">
+					
+					<li class="top hide"><a href="http://www.dreamincode.net/forums/topic/250097-edit-data-in-database-using-php/#top" class="top" title="Back to top">Back to top</a></li>
+					
+					
+						<li class="multiquote" id="multiq_1453417" style="">
+					
+							<a href="http://www.dreamincode.net/forums/index.php?app=forums&module=post&section=post&do=reply_post&f=28&t=250097&qpid=1453417" title="Quote this post with Multi-Quote"><img src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/comment_add.png" alt="Reply Icon"> MultiQuote</a>
+						</li>
+					<li><a href="http://www.dreamincode.net/forums/index.php?app=forums&module=post&section=post&do=reply_post&f=28&t=250097&qpid=1453417" title="Reply directly to this post"><img src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/comment_add.png" alt="Reply Icon"> Quote + Reply</a></li>
+					
+					
+					<!-- Matt: Approve / unapprove post button -->
+					
+				</ul>
+				<script type="text/javascript">
+					// Show multiquote for JS browsers
+					$('multiq_1453417').show();
+					
+					if( $('toggle_post_1453417') )
+					{
+						$('toggle_post_1453417').show();
+					}
+				</script>
+				
+			</div>
+		<!-- </if> -->			
+		</div>
+		
+		<hr>
+		
+	
+
+
+
+	
+		 
+    
+		<!--Begin Msg Number 1453463 - 4-->
+		<div class="post_block hentry clear  with_rep" id="post_id_1453463">
+
+
+
+			<a id="entry1453463"></a>
+			
+			
+			
+			
+			<div class="post_wrap">
+				
+					<h3>
+				
+						<span class="post_id">
+							<a href="http://www.dreamincode.net/forums/topic/250097-edit-data-in-database-using-php/page__view__findpost__p__1453463" rel="bookmark" title="Link to post #4">#4</a>
+						</span>
+				<span class="author vcard">
+								<a class="url fn" href="http://www.dreamincode.net/forums/user/180047-jstall/">Jstall</a>
+								&nbsp;<a href="http://www.dreamincode.net/forums/user/180047-jstall/page__f__28" class="__user __id180047 __fid28" title="View Profile"><img src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/user_popup.png" alt="Icon"></a>
+					
+								<img src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/user_off.png" alt="User is offline" title="User is offline">
+					
+							</span>
+
+
+				
+					</h3>
+				<div class="author_info">
+					<!--userInfoPane-->
+<ul class="user_details">
+		
+			<li class="avatar"><a href="http://www.dreamincode.net/forums/user/180047-jstall/" title="View Profile"><img src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/av-180047.jpg" width="64" height="64" alt=""></a></li>
+		
+		
+			<li class="title">Lurker</li>
+		
+		<li class="group_icon">
+			
+				<img src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/mentor_group.gif" alt="member icon">
+			
+			</li>
+	</ul>
+	<br>
+		
+			<div class="reputation positive">
+		
+		
+		
+		<span class="number">Reputation: 434</span>
+			</div>
+	<div style="margin: 0 auto;">
+		<ul class="user_controls clear">
+			
+			
+			
+				<li><a href="http://www.dreamincode.net/forums/index.php?app=blog&module=display&section=blog&mid=180047" title="View blog"><img src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/book_open.png" alt="View blog"></a></li>
+			
+			
+		</ul>
+	</div>
+	<ul class="user_fields">
+                
+		
+			<li>
+				<span class="ft">Posts:</span>
+				<span class="fc">1,042</span>
+			</li>
+			<li>
+				<span class="ft">Joined:</span>
+				<span class="fc">08-March 09</span>
+			</li>
+		
+	</ul>   
+			
+	
+<!--userInfoPane-->
+				</div>
+				<div class="post_body">
+
+
+  				<h2 class="entry-title">Re: edit data in database using php</h2>
+
+
+					<p class="posted_info">
+						
+						
+						Posted <abbr class="published updated" title="2011-10-06T13:35:37+00:00">06 October 2011 - 06:35 AM</abbr>
+					</p>
+					
+					<div class="post entry-content" id="">
+						<!--cached-Sun, 06 Apr 2014 04:12:18 +0000-->Hi,<br>
+<br>
+This line <br>
+<div id="highlighter_890073" class="syntaxhighlighter  "><div class="bar"><div class="toolbar"><a href="http://www.dreamincode.net/forums/topic/250097-edit-data-in-database-using-php/#viewSource" title="view source" class="item viewSource" style="width: 16px; height: 16px;">view source</a><div class="item copyToClipboard"><embed width="16" height="16" id="highlighter_890073_clipboard" type="application/x-shockwave-flash" title="copy to clipboard" allowscriptaccess="always" wmode="transparent" flashvars="highlighterId=highlighter_890073" menu="false" src="http://cdn.dreamincode.net/syntax/scripts/clipboard.swf"></div><a href="http://www.dreamincode.net/forums/topic/250097-edit-data-in-database-using-php/#printSource" title="print" class="item printSource" style="width: 16px; height: 16px;">print</a><a href="http://www.dreamincode.net/forums/topic/250097-edit-data-in-database-using-php/#about" title="?" class="item about" style="width: 16px; height: 16px;">?</a></div></div><div class="lines"><div class="line alt1"><table><tbody><tr><td class="number"><code>1</code></td><td class="content"><code class="plain">mysql_query(</code><code class="variable">$query</code><code class="plain">);</code></td></tr></tbody></table></div></div></div><br>
+<br>
+appears to do nothing so you can remove that.<br>
+<br>
+What message are you getting when you try this? Are you getting the "Error" message? If so then you know your query failed for some reason. Instead of <br>
+<div id="highlighter_128732" class="syntaxhighlighter  "><div class="bar"><div class="toolbar"><a href="http://www.dreamincode.net/forums/topic/250097-edit-data-in-database-using-php/#viewSource" title="view source" class="item viewSource" style="width: 16px; height: 16px;">view source</a><div class="item copyToClipboard"><embed width="16" height="16" id="highlighter_128732_clipboard" type="application/x-shockwave-flash" title="copy to clipboard" allowscriptaccess="always" wmode="transparent" flashvars="highlighterId=highlighter_128732" menu="false" src="http://cdn.dreamincode.net/syntax/scripts/clipboard.swf"></div><a href="http://www.dreamincode.net/forums/topic/250097-edit-data-in-database-using-php/#printSource" title="print" class="item printSource" style="width: 16px; height: 16px;">print</a><a href="http://www.dreamincode.net/forums/topic/250097-edit-data-in-database-using-php/#about" title="?" class="item about" style="width: 16px; height: 16px;">?</a></div></div><div class="lines"><div class="line alt1"><table><tbody><tr><td class="number"><code>1</code></td><td class="content"><code class="functions">echo</code> <code class="string">"ERROR"</code><code class="plain">;</code></td></tr></tbody></table></div></div></div><br>
+<br>
+Do something like<br>
+<div id="highlighter_406199" class="syntaxhighlighter  "><div class="bar"><div class="toolbar"><a href="http://www.dreamincode.net/forums/topic/250097-edit-data-in-database-using-php/#viewSource" title="view source" class="item viewSource" style="width: 16px; height: 16px;">view source</a><div class="item copyToClipboard"><embed width="16" height="16" id="highlighter_406199_clipboard" type="application/x-shockwave-flash" title="copy to clipboard" allowscriptaccess="always" wmode="transparent" flashvars="highlighterId=highlighter_406199" menu="false" src="http://cdn.dreamincode.net/syntax/scripts/clipboard.swf"></div><a href="http://www.dreamincode.net/forums/topic/250097-edit-data-in-database-using-php/#printSource" title="print" class="item printSource" style="width: 16px; height: 16px;">print</a><a href="http://www.dreamincode.net/forums/topic/250097-edit-data-in-database-using-php/#about" title="?" class="item about" style="width: 16px; height: 16px;">?</a></div></div><div class="lines"><div class="line alt1"><table><tbody><tr><td class="number"><code>1</code></td><td class="content"><code class="functions">echo</code> <code class="string">"Problem with query $sql, error was:"</code> <code class="plain">. mysql_error();</code></td></tr></tbody></table></div></div></div><br>
+<br>
+That will output the query itself so you can see the query that is being sent to your database as well as tell you what error you are getting.
+						
+						<br>
+						
+					</div>
+					
+
+
+				</div>
+			<div class="rep_bar clear right" id="rep_post_1453463"><span style="float: left; margin-top: 10px; font-weight: bold;">
+
+Was This Post Helpful? 
+
+</span>
+					
+												
+				
+					<span class="reputation zero rep_show clickable" title="Reputation" onclick="ipb.topic.repPopUp( this, 1453463 );">
+				
+				
+				
+						0
+					</span>
+<!-- REMOVED From Below: AND Array['member_id'] != 0 -->
+					<ul>
+						
+							<li><a href="http://www.dreamincode.net/forums/topic/250097-edit-data-in-database-using-php/#" class="rep_up" title="Vote this post up"><img src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/add.png" alt="+"></a></li>
+						
+						
+							<li><a href="http://www.dreamincode.net/forums/topic/250097-edit-data-in-database-using-php/#" class="rep_down" title="Vote this post down"><img src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/delete.png" alt="-"></a></li>
+						
+						</ul>
+				</div>
+				<script type="text/javascript">
+					ipb.global.registerReputation( 'rep_post_1453463', { app: 'forums', type: 'pid', typeid: '1453463' }, parseInt('0') );
+				</script>
+				<ul class="post_controls">
+					
+					<li class="top hide"><a href="http://www.dreamincode.net/forums/topic/250097-edit-data-in-database-using-php/#top" class="top" title="Back to top">Back to top</a></li>
+					
+					
+						<li class="multiquote" id="multiq_1453463" style="">
+					
+							<a href="http://www.dreamincode.net/forums/index.php?app=forums&module=post&section=post&do=reply_post&f=28&t=250097&qpid=1453463" title="Quote this post with Multi-Quote"><img src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/comment_add.png" alt="Reply Icon"> MultiQuote</a>
+						</li>
+					<li><a href="http://www.dreamincode.net/forums/index.php?app=forums&module=post&section=post&do=reply_post&f=28&t=250097&qpid=1453463" title="Reply directly to this post"><img src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/comment_add.png" alt="Reply Icon"> Quote + Reply</a></li>
+					
+					
+					<!-- Matt: Approve / unapprove post button -->
+					
+				</ul>
+				<script type="text/javascript">
+					// Show multiquote for JS browsers
+					$('multiq_1453463').show();
+					
+					if( $('toggle_post_1453463') )
+					{
+						$('toggle_post_1453463').show();
+					}
+				</script>
+				
+			</div>
+		<!-- </if> -->			
+		</div>
+		
+		<hr>
+		
+	
+
+
+
+	
+		 
+    
+		<!--Begin Msg Number 1453563 - 5-->
+		<div class="post_block hentry clear  with_rep" id="post_id_1453563">
+
+
+
+			<a id="entry1453563"></a>
+			
+			
+			
+			
+			<div class="post_wrap">
+				
+					<h3>
+				
+						<span class="post_id">
+							<a href="http://www.dreamincode.net/forums/topic/250097-edit-data-in-database-using-php/page__view__findpost__p__1453563" rel="bookmark" title="Link to post #5">#5</a>
+						</span>
+				<span class="author vcard">
+								<a class="url fn" href="http://www.dreamincode.net/forums/user/103410-ctphpnwb/">CTphpnwb</a>
+								&nbsp;<a href="http://www.dreamincode.net/forums/user/103410-ctphpnwb/page__f__28" class="__user __id103410 __fid28" title="View Profile"><img src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/user_popup.png" alt="Icon"></a>
+					
+								<img src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/user_off.png" alt="User is offline" title="User is offline">
+					
+							</span>
+
+
+				
+					</h3>
+				<div class="author_info">
+					<!--userInfoPane-->
+<ul class="user_details">
+		
+			<li class="avatar"><a href="http://www.dreamincode.net/forums/user/103410-ctphpnwb/" title="View Profile"><img src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/av-103410.jpg" width="64" height="50" alt=""></a></li>
+		
+		
+			<li class="title">D.I.C Lover</li>
+		
+		<li class="group_icon">
+			
+				<img src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/mentor_group.gif" alt="member icon"><br> <img src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/forum_leader.png">
+			
+			</li>
+	</ul>
+	<br>
+		
+			<div class="reputation positive">
+		
+		
+		
+		<span class="number">Reputation: 2832</span>
+			</div>
+	<div style="margin: 0 auto;">
+		<ul class="user_controls clear">
+			
+			
+			
+				<li><a href="http://www.dreamincode.net/forums/index.php?app=blog&module=display&section=blog&mid=103410" title="View blog"><img src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/book_open.png" alt="View blog"></a></li>
+			
+			
+		</ul>
+	</div>
+	<ul class="user_fields">
+                
+		
+			<li>
+				<span class="ft">Posts:</span>
+				<span class="fc">9,734</span>
+			</li>
+			<li>
+				<span class="ft">Joined:</span>
+				<span class="fc">08-August 08</span>
+			</li>
+		
+	</ul>   
+			
+	
+<!--userInfoPane-->
+				</div>
+				<div class="post_body">
+
+
+  				<h2 class="entry-title">Re: edit data in database using php</h2>
+
+
+					<p class="posted_info">
+						
+						
+						Posted <abbr class="published updated" title="2011-10-06T15:15:59+00:00">06 October 2011 - 08:15 AM</abbr>
+					</p>
+					
+					<div class="post entry-content" id="">
+						<!--cached-Sun, 06 Apr 2014 04:12:18 +0000-->Some links you need to study:<br>
+<a href="http://www.dreamincode.net/forums/topic/240698-why-use-functions/" class="bbc_url" title="External link" rel="external">http://www.dreaminco...-use-functions/</a><br>
+<a href="http://www.dreamincode.net/forums/topic/214733-introduction-to-pdo/" class="bbc_url" title="External link" rel="external">http://www.dreaminco...duction-to-pdo/</a><br>
+<a href="http://www.dreamincode.net/forums/topic/198226-code-separation/" class="bbc_url" title="External link" rel="external">http://www.dreaminco...ode-separation/</a><br>
+<a href="http://en.wikipedia.org/wiki/Indent_style" class="bbc_url" title="External link" rel="external">http://en.wikipedia....ki/Indent_style</a><br>
+<a href="http://en.wikipedia.org/wiki/Cascading_Style_Sheets" class="bbc_url" title="External link" rel="external">http://en.wikipedia....ng_Style_Sheets</a><br>
+<br>
+Organize your code. Unorganized code is difficult to read. If it's difficult to read how can you debug it? <br>
+<br>
+Stop worrying about getting it to work and start worrying about making your code readable. When you get it to a readable state you'll have it working. If you get it working without making it readable you aren't going to like it if you need to make changes even a few days later.
+						
+						<br>
+						
+					</div>
+					
+
+
+				</div>
+			<div class="rep_bar clear right" id="rep_post_1453563"><span style="float: left; margin-top: 10px; font-weight: bold;">
+
+Was This Post Helpful? 
+
+</span>
+					
+												
+				
+					<span class="reputation zero rep_show clickable" title="Reputation" onclick="ipb.topic.repPopUp( this, 1453563 );">
+				
+				
+				
+						0
+					</span>
+<!-- REMOVED From Below: AND Array['member_id'] != 0 -->
+					<ul>
+						
+							<li><a href="http://www.dreamincode.net/forums/topic/250097-edit-data-in-database-using-php/#" class="rep_up" title="Vote this post up"><img src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/add.png" alt="+"></a></li>
+						
+						
+							<li><a href="http://www.dreamincode.net/forums/topic/250097-edit-data-in-database-using-php/#" class="rep_down" title="Vote this post down"><img src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/delete.png" alt="-"></a></li>
+						
+						</ul>
+				</div>
+				<script type="text/javascript">
+					ipb.global.registerReputation( 'rep_post_1453563', { app: 'forums', type: 'pid', typeid: '1453563' }, parseInt('0') );
+				</script>
+				<ul class="post_controls">
+					
+					<li class="top hide"><a href="http://www.dreamincode.net/forums/topic/250097-edit-data-in-database-using-php/#top" class="top" title="Back to top">Back to top</a></li>
+					
+					
+						<li class="multiquote" id="multiq_1453563" style="">
+					
+							<a href="http://www.dreamincode.net/forums/index.php?app=forums&module=post&section=post&do=reply_post&f=28&t=250097&qpid=1453563" title="Quote this post with Multi-Quote"><img src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/comment_add.png" alt="Reply Icon"> MultiQuote</a>
+						</li>
+					<li><a href="http://www.dreamincode.net/forums/index.php?app=forums&module=post&section=post&do=reply_post&f=28&t=250097&qpid=1453563" title="Reply directly to this post"><img src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/comment_add.png" alt="Reply Icon"> Quote + Reply</a></li>
+					
+					
+					<!-- Matt: Approve / unapprove post button -->
+					
+				</ul>
+				<script type="text/javascript">
+					// Show multiquote for JS browsers
+					$('multiq_1453563').show();
+					
+					if( $('toggle_post_1453563') )
+					{
+						$('toggle_post_1453563').show();
+					}
+				</script>
+				
+			</div>
+		<!-- </if> -->			
+		</div>
+		
+		<hr>
+		
+	
+
+
+
+	
+		 
+    
+		<!--Begin Msg Number 1453950 - 6-->
+		<div class="post_block hentry clear  with_rep" id="post_id_1453950">
+
+
+
+			<a id="entry1453950"></a>
+			
+			
+			
+			
+			<div class="post_wrap">
+				
+					<h3>
+				
+						<span class="post_id">
+							<a href="http://www.dreamincode.net/forums/topic/250097-edit-data-in-database-using-php/page__view__findpost__p__1453950" rel="bookmark" title="Link to post #6">#6</a>
+						</span>
+				<span class="author vcard">
+								<a class="url fn" href="http://www.dreamincode.net/forums/user/476782-codeprada/">codeprada</a>
+								&nbsp;<a href="http://www.dreamincode.net/forums/user/476782-codeprada/page__f__28" class="__user __id476782 __fid28" title="View Profile"><img src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/user_popup.png" alt="Icon"></a>
+					
+								<img src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/user_off.png" alt="User is offline" title="User is offline">
+					
+							</span>
+
+
+				
+					</h3>
+				<div class="author_info">
+					<!--userInfoPane-->
+<ul class="user_details">
+		
+			<li class="avatar"><a href="http://www.dreamincode.net/forums/user/476782-codeprada/" title="View Profile"><img src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/6d9aac95dd0ac714aa6823ee3a74629a" alt=""></a></li>
+		
+		
+			<li class="title">Changed Man With Different Priorities</li>
+		
+		<li class="group_icon">
+			
+				<img src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/mentor_group.gif" alt="member icon">
+			
+			</li>
+	</ul>
+	<br>
+		
+			<div class="reputation positive">
+		
+		
+		
+		<span class="number">Reputation: 943</span>
+			</div>
+	<div style="margin: 0 auto;">
+		<ul class="user_controls clear">
+			
+			
+			
+				<li><a href="http://www.dreamincode.net/forums/index.php?app=blog&module=display&section=blog&mid=476782" title="View blog"><img src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/book_open.png" alt="View blog"></a></li>
+			
+			
+		</ul>
+	</div>
+	<ul class="user_fields">
+                
+		
+			<li>
+				<span class="ft">Posts:</span>
+				<span class="fc">2,353</span>
+			</li>
+			<li>
+				<span class="ft">Joined:</span>
+				<span class="fc">15-February 11</span>
+			</li>
+		
+	</ul>   
+			
+	
+<!--userInfoPane-->
+				</div>
+				<div class="post_body">
+
+
+  				<h2 class="entry-title">Re: edit data in database using php</h2>
+
+
+					<p class="posted_info">
+						
+						
+						Posted <abbr class="published updated" title="2011-10-06T21:31:25+00:00">06 October 2011 - 02:31 PM</abbr>
+					</p>
+					
+					<div class="post entry-content" id="">
+						<!--cached-Sun, 06 Apr 2014 04:12:18 +0000-->Another debugging tip is in update_ac.php you could try dumping $sql to also make sure the query is complete. Always check variables to make sure they exists before using them. PHP functions isset or empty could be used to do this. <br>
+<br>
+Always always sanitize user input. Look into Prepared Statements. They will avoid the risk of having to deal with SQL injections. They're offered by MySQLi and PDO.<br>
+<br>
+Database credentials should be centralized also. Meaning they should be in one location. What if your password changed? You would then have to go into every script and change them all. Instead place them in a PHP file then include it where ever you need it.<br>
+<div id="highlighter_326851" class="syntaxhighlighter  "><div class="bar"><div class="toolbar"><a href="http://www.dreamincode.net/forums/topic/250097-edit-data-in-database-using-php/#viewSource" title="view source" class="item viewSource" style="width: 16px; height: 16px;">view source</a><div class="item copyToClipboard"><embed width="16" height="16" id="highlighter_326851_clipboard" type="application/x-shockwave-flash" title="copy to clipboard" allowscriptaccess="always" wmode="transparent" flashvars="highlighterId=highlighter_326851" menu="false" src="http://cdn.dreamincode.net/syntax/scripts/clipboard.swf"></div><a href="http://www.dreamincode.net/forums/topic/250097-edit-data-in-database-using-php/#printSource" title="print" class="item printSource" style="width: 16px; height: 16px;">print</a><a href="http://www.dreamincode.net/forums/topic/250097-edit-data-in-database-using-php/#about" title="?" class="item about" style="width: 16px; height: 16px;">?</a></div></div><div class="lines"><div class="line alt1"><table><tbody><tr><td class="number"><code>1</code></td><td class="content"><code class="plain">&lt;?php</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>2</code></td><td class="content"><code class="plain">#credentials.php</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>3</code></td><td class="content"><code class="plain">define(</code><code class="string">'DB_HOST'</code><code class="plain">, </code><code class="string">'localhost'</code><code class="plain">);</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>4</code></td><td class="content"><code class="plain">define(</code><code class="string">'DB_USERNAME'</code><code class="plain">, </code><code class="string">'root'</code><code class="plain">);</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>5</code></td><td class="content"><code class="comments">//you get the point</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>6</code></td><td class="content"><code class="plain">?&gt;</code></td></tr></tbody></table></div></div></div><br>
+<div id="highlighter_520181" class="syntaxhighlighter  "><div class="bar"><div class="toolbar"><a href="http://www.dreamincode.net/forums/topic/250097-edit-data-in-database-using-php/#viewSource" title="view source" class="item viewSource" style="width: 16px; height: 16px;">view source</a><div class="item copyToClipboard"><embed width="16" height="16" id="highlighter_520181_clipboard" type="application/x-shockwave-flash" title="copy to clipboard" allowscriptaccess="always" wmode="transparent" flashvars="highlighterId=highlighter_520181" menu="false" src="http://cdn.dreamincode.net/syntax/scripts/clipboard.swf"></div><a href="http://www.dreamincode.net/forums/topic/250097-edit-data-in-database-using-php/#printSource" title="print" class="item printSource" style="width: 16px; height: 16px;">print</a><a href="http://www.dreamincode.net/forums/topic/250097-edit-data-in-database-using-php/#about" title="?" class="item about" style="width: 16px; height: 16px;">?</a></div></div><div class="lines"><div class="line alt1"><table><tbody><tr><td class="number"><code>1</code></td><td class="content"><code class="plain">&lt;?php</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>2</code></td><td class="content"><code class="keyword">require_once</code> <code class="string">'credentials.php'</code><code class="plain">;</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>3</code></td><td class="content"><code class="variable">$mysqli</code> <code class="plain">= </code><code class="keyword">new</code> <code class="plain">MySQLi(DB_HOST, DB_USERNAME.......</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>4</code></td><td class="content"><code class="plain">?&gt;</code></td></tr></tbody></table></div></div></div>
+						
+						<br>
+						
+					</div>
+					
+
+
+				</div>
+			<div class="rep_bar clear right" id="rep_post_1453950"><span style="float: left; margin-top: 10px; font-weight: bold;">
+
+Was This Post Helpful? 
+
+</span>
+					
+												
+				
+					<span class="reputation zero rep_show clickable" title="Reputation" onclick="ipb.topic.repPopUp( this, 1453950 );">
+				
+				
+				
+						0
+					</span>
+<!-- REMOVED From Below: AND Array['member_id'] != 0 -->
+					<ul>
+						
+							<li><a href="http://www.dreamincode.net/forums/topic/250097-edit-data-in-database-using-php/#" class="rep_up" title="Vote this post up"><img src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/add.png" alt="+"></a></li>
+						
+						
+							<li><a href="http://www.dreamincode.net/forums/topic/250097-edit-data-in-database-using-php/#" class="rep_down" title="Vote this post down"><img src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/delete.png" alt="-"></a></li>
+						
+						</ul>
+				</div>
+				<script type="text/javascript">
+					ipb.global.registerReputation( 'rep_post_1453950', { app: 'forums', type: 'pid', typeid: '1453950' }, parseInt('0') );
+				</script>
+				<ul class="post_controls">
+					
+					<li class="top hide"><a href="http://www.dreamincode.net/forums/topic/250097-edit-data-in-database-using-php/#top" class="top" title="Back to top">Back to top</a></li>
+					
+					
+						<li class="multiquote" id="multiq_1453950" style="">
+					
+							<a href="http://www.dreamincode.net/forums/index.php?app=forums&module=post&section=post&do=reply_post&f=28&t=250097&qpid=1453950" title="Quote this post with Multi-Quote"><img src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/comment_add.png" alt="Reply Icon"> MultiQuote</a>
+						</li>
+					<li><a href="http://www.dreamincode.net/forums/index.php?app=forums&module=post&section=post&do=reply_post&f=28&t=250097&qpid=1453950" title="Reply directly to this post"><img src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/comment_add.png" alt="Reply Icon"> Quote + Reply</a></li>
+					
+					
+					<!-- Matt: Approve / unapprove post button -->
+					
+				</ul>
+				<script type="text/javascript">
+					// Show multiquote for JS browsers
+					$('multiq_1453950').show();
+					
+					if( $('toggle_post_1453950') )
+					{
+						$('toggle_post_1453950').show();
+					}
+				</script>
+				
+			</div>
+		<!-- </if> -->			
+		</div>
+		
+		<hr>
+		
+	
+
+<!-- MOD LINKS -->
+
+<!-- REPUTATION FILTERS -->
+
+
+<!-- THREADED MODE -->
+
+<ul class="topic_jump right clear">
+	<li class="previous"><a href="http://www.dreamincode.net/forums/topic/250097-edit-data-in-database-using-php/page__view__old">&#8592; Previous Topic</a></li>
+	<li><strong><a href="http://www.dreamincode.net/forums/forum/28-php/" title="Return to PHP">PHP</a></strong></li>
+	<li class="next"><a href="http://www.dreamincode.net/forums/topic/250097-edit-data-in-database-using-php/page__view__new">Next Topic &#8594;</a></li>
+</ul>
+
+<!-- BOTTOM BUTTONS -->
+<div class="topic_controls clear">
+	
+	<span class="pagination no_pages left">Page 1 of 1</span>
+
+
+</div>
+<!--<hr />-->
+
+<!-- ACTIVE USERS -->
+
+
+<!-- Close topic -->
+</div>
+
+
+
+<!--/topicViewTemplate-->
+            <br class="clear">
+          </div>
+          <!--included content-->
+<!-- ads_bottom-->
+
+<table align="center" cellpadding="0" cellspacing="0" width="100%">
+	<tbody><tr>
+	<td align="center" valign="top">
+		<div id="div-gpt-ad-1326943007260-4" style="width:336px; height:280px;">
+	<script type="text/javascript">
+	googletag.cmd.push(function() { googletag.display('div-gpt-ad-1326943007260-4'); });
+	</script><script type="text/javascript" src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/ads(2)"></script><div id="div-gpt-ad-1326943007260-4_ad_container">
+<ins style="width: 336px; height: 280px; display: inline-table; position: relative; border: 0px; vertical-align: bottom;"><ins style="width: 336px; height: 280px; display: block; position: relative; border: 0px;"><iframe id="google_ads_iframe_/1014587/DIC_336x280_Footer_Default_0" name="google_ads_iframe_/1014587/DIC_336x280_Footer_Default_0" width="336" height="280" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" style="border: 0px; position: absolute; top: 0px; left: 0px;"></iframe></ins></ins></div>
+<script>googletag.impl.pubads.createDomIframe("div-gpt-ad-1326943007260-4_ad_container" ,"/1014587/DIC_336x280_Footer_Default_0",false,undefined);</script>
+	</div>
+		</td>
+<td align="left" valign="top" width="100%">		
+		<div id="related" style="margin-top: -25px;">
+					<style>
+		.related ul { list-style-type: circle; font-size: 12px; font-weight: bold; }
+        .related li { margin-bottom: 5px; background-position: left 7px !important; margin-left: -35px; }
+		.related h2 { font-size: 18px; font-weight: bold; }
+		.related a { color: blue; }
+		</style>
+		<div class="related">
+<h2>Related PHP Topics<sup>beta</sup></h2><ul><li><a href="http://www.dreamincode.net/forums/topic/83634-diplaying-malayalam-in-webpage-using-php/" title="2 Replies - Topic Started: January 30, 2009, 10:17 am" '="">Diplaying Malayalam In Webpage Using PHP - How Can I Diplay Malayalam In Webpage Using PHP</a> </li><li><a href="http://www.dreamincode.net/forums/topic/149260-how-to-save-image-in-mysql-using-php-code/" title="6 Replies - Topic Started: January 11, 2010, 7:07 am" '="">How To Save Image In Mysql Using Php Code - How To Save Picture Of Any Person In Our Database Using Php As Fronten</a> </li><li><a href="http://www.dreamincode.net/forums/topic/121056-how-to-send-multiple-data-in-database-using-form/" title="5 Replies - Topic Started: August 19, 2009, 9:09 am" '="">How To Send Multiple Data In Database Using Form</a> </li><li><a href="http://www.dreamincode.net/forums/topic/271534-question-on-collision-of-data-in-database/" title="2 Replies - Topic Started: March 19, 2012, 9:41 am" '="">Question On Collision Of Data In Database</a> </li><li><a href="http://www.dreamincode.net/forums/topic/108410-delete-data-from-database-using-checkbox/" title="0 Replies - Topic Started: June 4, 2009, 5:44 am" '="">Delete Data From Database Using Checkbox</a> <sup style="color: red;">Tutorial</sup></li><li><a href="http://www.dreamincode.net/forums/topic/119410-audio-and-video-file-upload/" title="3 Replies - Topic Started: August 10, 2009, 11:19 am" '="">Audio And Video File Upload - How To Upload Audio And Video Files In Mysql Using Php</a> </li><li><a href="http://www.dreamincode.net/forums/topic/54251-display-data-as-it-is-in-insert-data-in-database/" title="2 Replies - Topic Started: June 9, 2008, 9:57 am" '="">Display Data As It Is In Insert Data In Database</a> </li><li><a href="http://www.dreamincode.net/forums/topic/109054-how-to-make-new-arrival-boxes-by-using-php-and-mysql-database/" title="2 Replies - Topic Started: June 9, 2009, 1:54 am" '="">How To Make New Arrival Boxes By Using Php And Mysql Database - New Arrival Box Byn Using Php And Mysql Database</a> </li><li><a href="http://www.dreamincode.net/forums/topic/114866-how-to-insert-the-data-into-database-using-php/" title="1 Replies - Topic Started: July 15, 2009, 8:10 am" '="">How To Insert The Data Into Database Using Php</a> </li><li><a href="http://www.dreamincode.net/forums/topic/284410-i-cant-get-the-images-retrieve-using-php-in-javascript/" title="4 Replies - Topic Started: July 1, 2012, 1:32 am" '="">I Cant Get The Images Retrieve Using Php In Javascript.</a> </li></ul></div>			</div>
+		</td>
+        
+	</tr>
+</tbody></table>
+
+<!--/ads_bottom-->
+
+<!--/ included content-->
+
+          <script type="text/javascript" src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/lightbox.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+	// Lightbox Configuration
+	LightboxOptions = Object.extend({
+	    fileLoadingImage:        'http://cdn.dreamincode.net/forums/public/style_images/DIC/lightbox/loading.gif',     
+	    fileBottomNavCloseImage: 'http://cdn.dreamincode.net/forums/public/style_images/DIC/lightbox/closelabel.gif',
+	    overlayOpacity: 0.8,   // controls transparency of shadow overlay
+	    animate: true,         // toggles resizing animations
+	    resizeSpeed: 7,        // controls the speed of the image resizing animations (1=slowest and 10=fastest)
+	    borderSize: 10,         //if you adjust the padding in the CSS, you will need to update this variable
+		// When grouping images this is used to write: Image # of #.
+		// Change it for non-english localization
+		labelImage: "Image",
+		labelOf: "of"
+	}, window.LightboxOptions || {});
+/* Watch for a lightbox image and set up our downloadbutton watcher */
+document.observe('click', (function(event){
+    var target = event.findElement('a[rel^=lightbox]') || event.findElement('area[rel^=lightbox]');
+    if (target) {
+        event.stop();
+        gbl_addDownloadButton();
+    }
+}).bind(this));
+var _to    = '';
+var _last  = '';
+function gbl_addDownloadButton()
+{
+	if ( typeof( ipsLightbox.lightboxImage ) != 'undefined' && ipsLightbox.lightboxImage.src )
+	{
+		if ( _last != ipsLightbox.lightboxImage.src )
+		{
+			if ( ! $('gbl_d') )
+			{
+				$('bottomNav').insert( { top: "<div id='gbl_d' style='text-align:right;padding-bottom:4px;'></div>" } );
+			}
+			
+			$('gbl_d').update( "<a href='"+ ipsLightbox.lightboxImage.src + "' target='_blank'><img src='http://cdn.dreamincode.net/forums/public/style_images/DIC/lightbox/download-icon.png' /></a>" );
+			
+			_last = ipsLightbox.lightboxImage.src;
+		}
+	}
+	
+	/* Check for init and then keep checking for new image */
+	_to = setTimeout( "gbl_addDownloadButton()", 1000 );
+}
+//]]>
+</script>
+
+        </div><!-- /ipbwrapper -->
+      </div><!-- /content_inner -->
+    </div><!--/content_hold-->	
+
+    <!--included content-->
+			
+<div id="sidebar">
+<div style="margin-left: 35px; padding-top: 10px; text-align: center;">
+<a href="http://www.dreamincode.net/forums/index.php?app=core&module=global&section=register&coppa_user=&termsread=1&coppa_pass=1&agree_to_terms=1"><img src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/ask_a_question_336.png"></a>
+<br>
+<!-- begin ad tag (tile=2) -->
+<div id="div-gpt-ad-1326943007260-2" style="width: 300px; margin-left: 25px;">                                                                   
+<!-- begin ad tag (tile=2) -->
+<script type="text/javascript">
+//<![CDATA[
+ord = window.ord || Math.floor(Math.random()*1E16);
+document.write('<script type="text/javascript" src="http://ad2.netshelter.net/adj/ns.dreamincode/general;ppos=atf;kw=;tile=2;sz=300x250,300x600;ord=' + ord + '?"><\/script>');
+//]]>
+</script><script type="text/javascript" src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/general;ppos=atf;kw=;tile=2;sz=300x250,300x600"></script><script type="text/javascript" src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/300x250_ATF_NetShelter_Backup.js"></script><script type="text/javascript" src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/ads(3)"></script><div id="div-gpt-ad-1326943007260-2_ad_container"><div data-type="ad" data-publisher="lqm.dreamincode.site" data-zone="ron" data-format="300x250"><span style="visibility: hidden;"></span><iframe src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/serve.htm" frameborder="0" framespacing="0" scrolling="no" style="width:300px;height:250px ;" ow="1" replaced="true" width="300" height="250"></iframe><div style="width:300px; text-align:right; color: #999; font-size: 11px; height:16px; line-height: normal;margin-bottom: 5px;">	<div class="gpl-dis-diswrap" style="padding:3px 3px 0 0;margin-top: -5px;color:#000;background:#fff;font:normal normal normal 11px/16px Arial, Helvetica, Utkal, sans-serif;"><div class="gpl-dis-firstl" style="color:#000;font:normal normal normal 11px/16px Arial, Helvetica, Utkal, sans-serif;text-align:right;">Ads by Discount Buddy. <a href="http://www.dreamincode.net/forums/topic/250097-edit-data-in-database-using-php/#" class="gpl-dis-more" style="color:#000;text-decoration:underline;font:normal normal normal 11px/16px Arial, Helvetica, Utkal, sans-serif;display:inline;">More Info</a> | <a href="http://www.dreamincode.net/forums/topic/250097-edit-data-in-database-using-php/#" class="gpl-dis-hide" style="color:#000;text-decoration:underline;font:normal normal normal 11px/16px Arial, Helvetica, Utkal, sans-serif;display:inline;">Hide These Ads</a></div><div class="gpl-dis-secondl" style="display:none;"><a href="http://advertising-support.com/why.php?type=3&zone=527342&pid=1825&ext=Discount%20Buddy" style="color:#000;text-decoration:underline;font:normal normal normal 11px/16px Arial, Helvetica, Utkal, sans-serif;display:inline;" target="blank">Get Help</a> | <a href="http://advertising-support.com/privacy.php?type=3&zone=527342&pid=1825&ext=Discount%20Buddy" style="color:#000;text-decoration:underline;font:normal normal normal 11px/16px Arial, Helvetica, Utkal, sans-serif;display:inline;" target="blank">Privacy Policy</a> | <a href="http://www.dreamincode.net/forums/topic/250097-edit-data-in-database-using-php/#" class="gpl-dis-back" style="color:#000;text-decoration:underline;font:normal normal normal 11px/16px Arial, Helvetica, Utkal, sans-serif;display:inline;">Back</a></div></div></div><iframe id="dmad3" allowtransparency="false" style="z-index:10" width="300" height="250" marginwidth="0" marginheight="0" frameborder="0" scrolling="no" ow="1"></iframe></div>
+
+<script type="text/javascript">
+    function _dmBootstrap(file) {
+        var _dma = document.createElement('script'); 
+        _dma.type = 'text/javascript';
+        _dma.async = true; 
+        _dma.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + file;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(_dma);
+    }
+    function _dmFollowup(file) { if (typeof DMAds === 'undefined')  _dmBootstrap('cdn2.DeveloperMedia.com/a.min.js');}
+    (function () { _dmBootstrap('cdn1.DeveloperMedia.com/a.min.js'); setTimeout(_dmFollowup, 2000);})();
+</script>
+ 
+</div>
+
+
+<noscript>&lt;a href="http://ad2.netshelter.net/jump/ns.dreamincode/general;ppos=atf;kw=;tile=2;sz=300x250,300x600;ord=123456789?" target="_blank" &gt;&lt;img src="http://ad2.netshelter.net/ad/ns.dreamincode/general;ppos=atf;kw=;tile=2;sz=300x250,300x600;ord=123456789?" border="0" alt="" /&gt;&lt;/a&gt;</noscript>
+<!-- end ad tag -->
+</div>
+</div>
+<div id="sidebar_inner">
+
+	
+<div class="column1">
+  <!-- google_ad_section_start(weight=ignore) -->
+    <div class="navigation">
+      
+
+		
+		<h2><a href="http://www.dreamincode.net/forums/forum/72-general-discussion/">General Discussion</a></h2>
+			<ul class="navigation">			
+											 <li><a href="http://www.dreamincode.net/forums/forum/1-caffeine-lounge/" title="This is our off-topic forum for discussions related to non-programming topics including: sports, current events, games, music, movies, food, drink, TV, geek related (toys &amp; technology), debates, life events, rants, and occasionally religion and politics. ">Caffeine Lounge</a></li>
+														 <li><a href="http://www.dreamincode.net/forums/forum/93-corner-cubicle/" title="Off-Topic discussion of IT related topics. This is the forum for professionals and those interested in serious discussion of topics related to the world of IT. It all happens here in the corner cubicle. ">Corner Cubicle</a></li>
+														 <li><a href="http://www.dreamincode.net/forums/forum/110-student-campus/" title="A forum just for students. Talk about colleges, classes, resources for students, homework, and other topics related to life in school. ">Student Campus</a></li>
+														 <li><a href="http://www.dreamincode.net/forums/forum/82-software-development/" title="Discuss topics related to developing software. Including architecture, design patterns, documentation, software industry, and other non-language specific programming topics. ">Software Development</a></li>
+														 <li><a href="http://www.dreamincode.net/forums/forum/83-industry-news/" title="A place for topics that announce various news from the web/software development industry (product release announcements, updates, new services etc.)">Industry News</a></li>
+														 <li><a href="http://www.dreamincode.net/forums/forum/65-introduce-yourself/" title="A place where you can introduce yourself to the community and greet other new members.">Introduce Yourself</a></li>
+														 <li><a href="http://www.dreamincode.net/forums/forum/201-nightmareincode/" title="*NEW* - Post the worst code you come across and have a good laugh. Because sometimes your code dreams, are really code nightmares. ">Nightmare.In.Code</a></li>
+										</ul>
+		
+		<h2><a href="http://www.dreamincode.net/forums/forum/76-programming-help/">Programming Help</a></h2>
+			<ul class="navigation">			
+											 <li><a href="http://www.dreamincode.net/forums/forum/15-c-and-c/" title="Expert programming help for C, and C++! Ask questions about homework assignments, or any other C/C++ related problems. C++ is a great language when beginning programming. ">C and C++</a></li>
+														 <li><a href="http://www.dreamincode.net/forums/forum/67-vbnet/" title="Ask questions about Microsoft&#39;s VB.NET programming language.">VB.NET</a></li>
+														 <li><a href="http://www.dreamincode.net/forums/forum/32-java/" title="Post your Java questions in here. We&#39;re happy to help with homework assignments, work projects, or any other java related questions. Java is common when beginning computer programming.">Java</a></li>
+														 <li><a href="http://www.dreamincode.net/forums/forum/84-c/" title="Object Oriented Programming at its finest. Encompassing power with ease of use, C# has become one of the top programming languages of the new age.">C#</a></li>
+														 <li><a href="http://www.dreamincode.net/forums/forum/30-aspnet/" title="Having some problems with ASP.NET programming? Pop in here and ask your question!">ASP.NET</a></li>
+														 <li><a href="http://www.dreamincode.net/forums/forum/142-net-framework/" title="">.NET Framework</a></li>
+														 <li><a href="http://www.dreamincode.net/forums/forum/21-vb6/" title="Our Visual Basic experts are happy to help with homework assignments, commercial applications, or any other VB question you may have! Visual Basic is good to learn programming. ">VB6</a></li>
+														 <li><a href="http://www.dreamincode.net/forums/forum/28-php/" title="Having some PHP problems? Need some help with a few functions? This is the place to ask! ">PHP</a></li>
+														 <li><a href="http://www.dreamincode.net/forums/forum/70-ruby/" title="This up-and-coming language is easy to learn, fast to develop, and very powerful. Get help with the Ruby on Rails framework or any other Ruby questions you have!">Ruby</a></li>
+														 <li><a href="http://www.dreamincode.net/forums/forum/29-python/" title="">Python</a></li>
+														 <li><a href="http://www.dreamincode.net/forums/forum/31-coldfusion/" title="It&#39;s the other white meat... a rapid application development language that will have you hooked in no time! From cfoutput to components, we can help you out!">ColdFusion</a></li>
+														 <li><a href="http://www.dreamincode.net/forums/forum/14-databases/" title="mySQL, PostgreSQL, Access, SQL, and Oracle... you&#39;ve got a database question... we&#39;ve got database answers!">Databases</a></li>
+														 <li><a href="http://www.dreamincode.net/forums/forum/62-other-languages/" title="Discuss languages that don&#39;t have a specific forum. Including COBOL, Fortran, ADA, Basic, etc. ">Other Languages</a></li>
+														 <li><a href="http://www.dreamincode.net/forums/forum/69-game-development/" title="Get help with anything game development related. Programming, 3D Engines, Art, Design and Math etc.">Game Development</a></li>
+														 <li><a href="http://www.dreamincode.net/forums/forum/109-mobile-development/" title="Discuss developing applications for mobile phones. Including Android, iPhone, and other mobile platforms. ">Mobile Development</a></li>
+														 <li><a href="http://www.dreamincode.net/forums/forum/126-52-weeks-of-code/" title="">52 Weeks Of Code</a></li>
+										</ul>
+		
+		<h2><a href="http://www.dreamincode.net/forums/forum/74-web-development/">Web Development</a></h2>
+			<ul class="navigation">			
+											 <li><a href="http://www.dreamincode.net/forums/forum/63-web-development/" title="Discuss anything that doesn&#39;t fit in the other web development forums.">Web Development</a></li>
+														 <li><a href="http://www.dreamincode.net/forums/forum/4-html-css/" title="Have questions about HTML, XHTML, CSS? We&#39;ll get you headed in the right direction! ">HTML &amp; CSS</a></li>
+														 <li><a href="http://www.dreamincode.net/forums/forum/90-javascript/" title="JavaScript and AJAX, it&#39;s what Web 2.0 is all about. Post your JavaScript related questions here!">JavaScript</a></li>
+														 <li><a href="http://www.dreamincode.net/forums/forum/3-graphic-design/" title="Photoshop and Corel gurus come on in! Can&#39;t figure out how to do that cool effect? Have some questions or cool web images you&#39;ve made? Post em&#39; here">Graphic Design</a></li>
+														 <li><a href="http://www.dreamincode.net/forums/forum/8-flash-actionscript/" title="Let our Flash and ActionScript experts answer your questions. From simple tweens to advanced flash remoting, we&#39;re happy to help!">Flash &amp; ActionScript</a></li>
+														 <li><a href="http://www.dreamincode.net/forums/forum/89-blogging/" title="Wordpress, Blogger, Plugins, Themes, Skins, Pay Per Post, and anything else related to the Blogging industry. ">Blogging</a></li>
+														 <li><a href="http://www.dreamincode.net/forums/forum/59-seo-advertising/" title="Advertising, SEO, AdSense, AdWords, Link Trades, and more! Now that you&#39;ve created your website, you&#39;ve gotta drive traffic to it. Discuss current trends and techniques here. ">SEO &amp; Advertising</a></li>
+														 <li><a href="http://www.dreamincode.net/forums/forum/88-web-servers-hosting/" title="Apache, IIS, Shared Hosting, Dedicated Hosting, Colocation. We&#39;ll make sure you get your site online and keep it online!">Web Servers &amp; Hosting</a></li>
+														 <li><a href="http://www.dreamincode.net/forums/forum/5-site-check/" title="Post your web site to be reviewed by fellow dream.in.code members. ">Site Check</a></li>
+										</ul>
+
+      	  <!-- DIC_160x600_Left_Default -->
+		<div id="div-gpt-ad-1326943007260-0" style="width:160px; height:600px;">
+		<script type="text/javascript">
+		googletag.cmd.push(function() { googletag.display('div-gpt-ad-1326943007260-0'); });
+		</script><script type="text/javascript" src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/ads(4)"></script><div id="div-gpt-ad-1326943007260-0_ad_container"><div data-type="ad" data-publisher="lqm.dreamincode.site" data-zone="ron" data-format="160x600"><iframe id="dmad4" allowtransparency="false" style="z-index:10" width="160" height="600" marginwidth="0" marginheight="0" frameborder="0" scrolling="no"></iframe></div>
+
+<script type="text/javascript">
+    function _dmBootstrap(file) {
+        var _dma = document.createElement('script'); 
+        _dma.type = 'text/javascript';
+        _dma.async = true; 
+        _dma.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + file;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(_dma);
+    }
+    function _dmFollowup(file) { if (typeof DMAds === 'undefined')  _dmBootstrap('cdn2.DeveloperMedia.com/a.min.js');}
+    (function () { _dmBootstrap('cdn1.DeveloperMedia.com/a.min.js'); setTimeout(_dmFollowup, 2000);})();
+</script>
+</div>
+
+		</div>
+	        <br>
+    </div>
+	<!-- google_ad_section_end -->
+</div><div class="column2">
+<!--   	<div id="search">
+  		<h2>Search<sup><span style="color:red; font-size: 10px;">Updated!</span></sup><span class="w00t">w00t</span></h2>
+  		<span style="font-size: 11px; color: #CCCCCC; font-weight: bold;"><B>Over 509,000 Pages!</B></span>
+  	  <form style="margin:0;" id="searchbox_000872085005376217422:zamd_7elal4" action="/home">
+  			<input type="hidden" name="cx" value="000872085005376217422:zamd_7elal4" />
+  			<input type="hidden" name="p" value="google" />
+  			<input type="hidden" name="cof" value="FORID:11" />
+  			<input name="q" type="text" size="9" style="font-size: 14px; font-weight: bolder; margin-left: -2px;" value="" />
+  			<input type="submit" name="sa" value="Go" />
+  	  </form>
+  	  <a href="/forums/index.php?app=core&module=search" style="text-decoration: none;"><span style="font-size: 11px; color: #CCCCCC; font-weight: bold; text-decoration: underline;">Advanced Forum Search</span></a>
+  	</div> -->
+  	<div class="tutorials" style="margin-top: -15px;">
+   		<h2>Follow &amp; Share</h2>
+		<!-- Place this tag in the <head> of your document -->
+<script type="text/javascript">
+window.___gcfg = {lang: 'en'};
+(function() 
+{var po = document.createElement("script");
+po.type = "text/javascript"; po.async = true;po.src = "https://apis.google.com/js/plusone.js";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(po, s);
+})();</script>
+
+<!-- Place this tag where you want the badge to render -->
+<div id="___plus_0" style="text-indent: 0px; margin: 0px; padding: 0px; background-color: transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 170px; height: 85px; background-position: initial initial; background-repeat: initial initial;"><iframe frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 170px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 85px;" tabindex="0" vspace="0" width="100%" id="I0_1397022055182" name="I0_1397022055182" src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/badge.htm" data-gapiattached="true" title="+Badge"></iframe></div><br>
+  		<a href="http://www.dreamincode.net/rss/featured.php" rel="alternate"><img src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/feed-icon32x32.png" alt="Dream.In.Code RSS Feed" style="border:0; margin: 2px;" width="32" height="32"></a>
+  		<a href="http://www.linkedin.com/e/gis/1506187" rel="alternate"><img src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/linkedin-icon32x32.png" alt="Dream.In.Code LinkedIn Group" style="border:0; margin: 2px;" width="32" height="32"></a>
+  		<a href="http://www.twitter.com/dreamincode" rel="alternate"><img src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/twitter-icon32x32.png" alt="Follow Us On Twitter" style="border:0; margin: 2px;" width="32" height="32"></a>
+  		<a href="http://www.facebook.com/pages/DreamInCode/62219401412" rel="alternate"><img src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/facebook.png" alt="Fan Us On Facebook" style="border:0; margin: 2px;" width="32" height="32"></a>
+  <!-- 		<script type="text/javascript">
+  			document.write('<a rel="nofollow" href="http://del.icio.us/post?url=http://www.dreamincode.net&title=Dream.In.Code Programming Community" title="Bookmark This to del.icio.us"><img src="http://cdn.dreamincode.net/home/images/80727937.png" alt="delicious" height="16" width="16" style="margin-left: 2px;" /></a>');
+  			document.write('<a rel="nofollow" href="http://digg.com/submit?phase=2&url='+encodeURIComponent(location.href)+'" title="Digg This!"><img src="http://cdn.dreamincode.net/home/images/89072042.png" alt="digg" height="16" width="16" /></a>');
+  			document.write('<a rel="nofollow" href="http://www.google.com/bookmarks/mark?op=add&bkmk='+encodeURIComponent(location.href)+'&title='+encodeURIComponent(document.title)+'" title="Bookmark to Google"><img src="http://cdn.dreamincode.net/home/images/10847106.png" alt="google" height="16" width="16" /></a>');
+  			document.write('<a rel="nofollow"  href="http://www.newsvine.com/_tools/seed&save?u='+encodeURIComponent(location.href)+'&h='+encodeURIComponent(document.title)+'" title="Bookmark to Newsvine" ><img src="http://cdn.dreamincode.net/home/images/27563199.png" alt="newsvine" height="16" width="16" /></a>');
+  			document.write('<a rel="nofollow" href="http://reddit.com/submit? url='+encodeURIComponent(location.href)+'&title='+encodeURIComponent(document.title)+'" title="Add to reddit"><img src="http://cdn.dreamincode.net/home/images/10796749.png" alt="reddit" height="16" width="16" /></a>');
+  			document.write('<a rel="nofollow" href="http://www.spurl.net/spurl.php?url='+encodeURIComponent(location.href)+'&title='+encodeURIComponent(document.title)+'" title="Spurl This!"><img src="http://cdn.dreamincode.net/home/images/67105361.png" alt="spurl" height="16" width="16" /></a>');
+  			document.write('<a rel="nofollow" href="http://technorati.com/faves?add='+encodeURIComponent(location.href)+'" title="Add to Technorati Favorites" ><img src="http://cdn.dreamincode.net/home/images/81723336.png" alt="Technorati" height="16" width="16" /></a>');
+  		</script> -->
+		<p><a href="http://feeds.feedburner.com/dic_featured"><img src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/dic_featured" height="26" width="88" style="border:0; margin-top: 2px; margin-left: 3px;" alt=""></a></p>
+  		<!-- google_ad_section_end -->
+
+
+<!--		<h2>Give It A Try!</h2>
+<div class="lqm_ad" lqm_publisher="lqm.dreamincode.site" lqm_zone="ros" lqm_format="160x250"></div>-->
+
+		
+
+
+		<!-- <h2>Celebrate &amp; Win!</h2>
+		<a href="http://www.dreamincode.net/forums/topic/247091-dreamincode-10th-birthday500k-members-contest/"><img src="http://cdn.dreamincode.net/home/images/10yr_170x200.jpg"></a> -->
+  		
+<h2><a href="http://www.dreamincode.net/forums/showforum47.htm">PHP Tutorials</a></h2>
+<ul>
+	<li><a href="http://www.dreamincode.net/forums/topic/343491-basic-form-validation/">Basic Form Validation</a></li>
+	<li><a href="http://www.dreamincode.net/forums/topic/326807-securing-login-forms-from-brute-force-attacks-using-queues/">Securing login forms from brute-force attacks using queues.</a></li>
+	<li><a href="http://www.dreamincode.net/forums/topic/305154-display-formatted-code/">Display Formatted Code</a></li>
+	<li><a href="http://www.dreamincode.net/forums/topic/304577-simple-content-formatting-with-regular-expressions/">Simple Content Formatting with Regular Expressions</a></li>
+	<li><a href="http://www.dreamincode.net/forums/topic/290000-limiting-login-attempts/">Limiting login attempts</a></li>
+	<li><a href="http://www.dreamincode.net/forums/topic/276079-codeigniter-text-based-mafia-game-loginusersonline-part-3/">CodeIgniter Text Based Mafia Game || Login/Usersonline part 3</a></li>
+	<li><a href="http://www.dreamincode.net/forums/topic/275526-adding-your-own-functionality-to-smarty-w-plugins/">Adding Your Own Functionality To Smarty w/ Plugins</a></li>
+	<li><a href="http://www.dreamincode.net/forums/topic/275488-codeigniter-text-based-mafia-game-register-part-2/">CodeIgniter Text Based Mafia Game || Register part 2</a></li>
+	<li><a href="http://www.dreamincode.net/forums/topic/274821-codeigniter-text-based-mafia-game-intro-set-up-part-1/">CodeIgniter Text Based Mafia Game || Intro / Set-up Part 1</a></li>
+	<li><a href="http://www.dreamincode.net/forums/topic/274419-functions-that-return-booleans-for-fun-and-profit/">Functions that return booleans for fun and profit.</a></li>
+		<li><a href="http://www.dreamincode.net/forums/showforum47.htm"><strong>170 More PHP Tutorials...</strong></a></li>	</ul>
+	
+  
+  		<h2>Reference Sheets</h2>
+  		<a href="http://www.dreamincode.net/forums/showtopic17947.htm"><img src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/refsheets5.png" height="157" width="151"></a>
+  
+  		<h2><a href="http://www.dreamincode.net/code">Code Snippets</a></h2>
+<ul>
+
+
+							 <li><a href="http://www.dreamincode.net/forums/forum/206-c-snippets/" title="">C Snippets</a></li>
+														 <li><a href="http://www.dreamincode.net/forums/forum/208-c-snippets/" title="">C++ Snippets</a></li>
+														 <li><a href="http://www.dreamincode.net/forums/forum/209-java-snippets/" title="">Java Snippets</a></li>
+														 <li><a href="http://www.dreamincode.net/forums/forum/210-visual-basic-snippets/" title="For VB6 and older versions. Please post VB.NET Snippets in the VB.NET Snippets section.">Visual Basic Snippets</a></li>
+														 <li><a href="http://www.dreamincode.net/forums/forum/211-c#-snippets/" title="">C# Snippets</a></li>
+														 <li><a href="http://www.dreamincode.net/forums/forum/212-vbnet-snippets/" title="">VB.NET Snippets</a></li>
+														 <li><a href="http://www.dreamincode.net/forums/forum/213-php-snippets/" title="">PHP Snippets</a></li>
+														 <li><a href="http://www.dreamincode.net/forums/forum/214-python-snippets/" title="">Python Snippets</a></li>
+														 <li><a href="http://www.dreamincode.net/forums/forum/215-ruby-snippets/" title="">Ruby Snippets</a></li>
+														 <li><a href="http://www.dreamincode.net/forums/forum/216-coldfusion-snippets/" title="">ColdFusion Snippets</a></li>
+														 <li><a href="http://www.dreamincode.net/forums/forum/217-sql-snippets/" title="">SQL Snippets</a></li>
+														 <li><a href="http://www.dreamincode.net/forums/forum/218-assembly-snippets/" title="">Assembly Snippets</a></li>
+														 <li><a href="http://www.dreamincode.net/forums/forum/219-functional-programming-snippets/" title="For functional languages such as Lisp, Clojure, Scheme, Erlang, Haskell, OCaml, F#, and others.">Functional Programming Snippets</a></li>
+														 <li><a href="http://www.dreamincode.net/forums/forum/220-perl-snippets/" title="">Perl Snippets</a></li>
+														 <li><a href="http://www.dreamincode.net/forums/forum/221-htmlcss-snippets/" title="">HTML/CSS Snippets</a></li>
+														 <li><a href="http://www.dreamincode.net/forums/forum/222-jvscript-snippets/" title="">Javascript Snippets</a></li>
+														 <li><a href="http://www.dreamincode.net/forums/forum/223-flashactionscript-snippets/" title="">Flash/ActionScript Snippets</a></li>
+														 <li><a href="http://www.dreamincode.net/forums/forum/224-other-languages-snippets/" title="For languages without individualized snippets sections">Other Languages Snippets</a></li>
+							</ul>
+
+
+
+
+  
+  		<!-- google_ad_section_start(weight=ignore) -->
+  		<h2><a rel="nofollow" href="http://www.dreamincode.net/?p=chat">DIC Chatroom</a></h2>
+  		<ul><li><a rel="nofollow" href="http://www.dreamincode.net/?p=chat">Join our IRC Chat</a></li></ul>
+  		<h2>Bye Bye Ads</h2>
+  		<a rel="nofollow" href="http://www.dreamincode.net/forums/index.php?act=paysubs&CODE=index"><img src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/dicpp.gif" width="141" height="32"></a>
+  		<!--<h2>Monthly Drawing</h2>
+  		<a href="/forums/index.php?showtopic=19383" rel="nofollow"><img alt="Thumb Drive" width="130" height="77" src="http://cdn.dreamincode.net/home/images/monthlygiveaway.gif"/></a>-->
+   
+            <!-- google_ad_section_end -->
+  	</div>
+</div>
+<div style="padding-left: 50px; position: relative; clear: both;">
+<iframe src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/likebox.htm" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:300px; height:287px;" allowtransparency="true"></iframe>
+</div>
+
+  </div> <!-- /sidebar_inner-->
+</div> <!-- /sidebar -->
+
+
+<!--/ included content-->
+  </div><!--/main_content-->
+
+  <div id="footer">
+    <!--included content-->
+<!-- google_ad_section_start(weight=ignore) -->	
+<br><br>
+<div align="center">
+	<strong><a href="http://www.dreamincode.net/forums/index.php?showannouncement=22">FAQ</a> | <a href="http://www.dreamincode.net/forums/blog/1081-dreamincode-team-blog/">Team Blog</a> | <a href="http://www.dreamincode.net/forums/forum/106-site-questions-support/">Feedback/Support</a> | <a href="http://www.dreamincode.net/downloads/MediaKit.pdf" rel="nofollow">Advertising</a><img src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/pdf.gif" border="0" valign="middle"> | <a href="http://www.dreamincode.net/?p=tos" rel="nofollow">Terms of Use</a> | <a href="http://www.dreamincode.net/?p=privacy" rel="nofollow">Privacy Policy</a> | <a href="http://www.dreamincode.net/?p=about" rel="nofollow">About Us</a> 
+</strong></div><strong>
+
+<br>
+
+
+<br>
+
+<div align="center">Copyright 2001-2014 <a href="http://www.mediagroup1.com/" rel="nofollow"><b>MediaGroup1 LLC</b></a>, All Rights Reserved<br>A <a href="http://www.mediagroup1.com/" rel="nofollow"><b>MediaGroup1 LLC</b></a> Production - Version 6.0.2.1.36<br>Server: secure3</div>
+
+</strong></div><strong>
+
+
+
+
+<script type="text/javascript" src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/thickbox.js"></script>
+<script type="text/javascript" src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/jsapi"></script>
+<script type="text/javascript">
+google.load('search', '1',{nocss: true});
+jQuery(document).ready(function() {
+	jQuery("#cse-search-box").submit(function () {
+	var customSearchControl = new google.search.CustomSearchControl('000872085005376217422:zamd_7elal4');
+	customSearchControl.setLinkTarget(google.search.Search.LINK_TARGET_SELF);
+	tb_show("Dream.In.Code Search Results - Powered By <img src='http://www.google.com/cse/images/google_custom_search_smwide.gif'>", "#TB_inline?height=480&width=800");
+	var drawOptions = new google.search.DrawOptions();
+	customSearchControl.draw(document.getElementById("TB_ajaxContent"), drawOptions);
+	customSearchControl.execute(document.getElementById("query").value);
+	return false;
+	});
+});
+</script><script src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/saved_resource(1)" type="text/javascript"></script><script src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/default+en.I.js" type="text/javascript"></script>
+
+
+
+
+<!-- <style>.hilite { background-color: #ff0; }</style>
+<script type="text/javascript" src="http://cdn.dreamincode.net/home/templates2/se_hilite.js"></script>
+ -->
+
+
+<!-- Google Website Optimizer Tracking Script 
+<script type="text/javascript">
+if(typeof(_gat)!='object')document.write('<sc'+'ript src="http'+
+(document.location.protocol=='https:'?'s://ssl':'://www')+
+'.google-analytics.com/ga.js"></sc'+'ript>')</script>
+<script type="text/javascript">
+try {
+var gwoTracker=_gat._getTracker("UA-69851-6");
+gwoTracker._trackPageview("/2514943763/test");
+}catch(err){}</script>
+ End of Google Website Optimizer Tracking Script -->
+
+<!-- Start Quantcast tag -->
+<script type="text/javascript">
+_qoptions={
+qacct:"p-d4Szpdj6xMw-o"
+};
+</script>
+<script type="text/javascript" src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/quant.js"></script>
+<noscript>
+&lt;img src="http://pixel.quantserve.com/pixel/p-d4Szpdj6xMw-o.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/&gt;
+</noscript>
+<!-- End Quantcast tag -->
+
+<script src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/saved_resource(2)" type="text/javascript"></script>
+
+<!-- <script type='text/javascript' language='Javascript' src='http://s1.lqcdn.com/m.min.js?dt=2.3.110104.1'></script> -->
+
+<script type="text/javascript">
+    function _dmBootstrap(file) {
+        var _dma = document.createElement('script'); 
+        _dma.type = 'text/javascript';
+        _dma.async = true; 
+        _dma.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + file;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(_dma);
+    }
+    function _dmFollowup(file) { if (typeof DMAds === 'undefined')  _dmBootstrap('cdn2.DeveloperMedia.com/a.min.js');}
+    (function () { _dmBootstrap('cdn1.DeveloperMedia.com/a.min.js'); setTimeout(_dmFollowup, 2000);})();
+</script>
+
+
+<script type="text/javascript" src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/dreamincode.net.js"></script><script type="text/javascript">var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));</script><script src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/ga.js" type="text/javascript"></script><script src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/beacon.js"></script><script type="text/javascript" src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/v60.js"></script><script type="text/javascript">var pvar = { cid: "ziffdavis", content: "0", server: "secure-us" };var trac = nol_t(pvar);trac.record().post();</script><script type="text/javascript" src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/dreamincode.net-incl.js"></script><script type="text/javascript">try { var ns_pageTracker = _gat._getTracker("UA-25910482-47"); ns_pageTracker._trackPageview(); } catch(err) {} </script><script type="text/javascript">COMSCORE.beacon({c1:2,c2:6036316,c3:"",c4:"",c5:"",c6:"",c15:""});</script>
+
+<!-- google_ad_section_end -->	
+
+
+
+<div align="center">
+</div>
+
+<!--/ included content-->
+
+
+
+
+  </strong></div><img name="control_pixel" id="control_pixel" border="0" width="1" height="1" src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/adscout.php"><iframe name="oauth2relay625052093" id="oauth2relay625052093" src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/postmessageRelay.htm" tabindex="-1" style="width: 1px; height: 1px; position: absolute; top: -100px;"></iframe><strong>
+			
+
+<script type="text/javascript" src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/shCore.js"></script>
+<script type="text/javascript" src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/shBrushBash.js"></script>
+
+
+
+
+
+
+<script type="text/javascript">
+jQuery(function(){
+  jQuery('pre').removeClass('brush: bash').addClass('brush: php');
+});
+</script>
+<script type="text/javascript" src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/shBrushPhp.js"></script>
+
+
+
+
+
+	<link type="text/css" rel="stylesheet" href="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/shCore.css">
+	<link type="text/css" rel="stylesheet" href="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/shThemeDefault.css">
+	<script type="text/javascript">
+                SyntaxHighlighter.config.clipboardSwf = 'http://cdn.dreamincode.net/syntax/scripts/clipboard.swf';
+		SyntaxHighlighter.all();
+	</script>
+
+
+  
+</strong><div id="overlay" style="display: none;"></div><div id="lightbox" style="display: none;"><div id="outerImageContainer" style="width: 250px; height: 250px;"><div id="imageContainer"><img id="lightboxImage"><div id="hoverNav"><a id="prevLink" href="http://www.dreamincode.net/forums/topic/250097-edit-data-in-database-using-php/#"></a><a id="nextLink" href="http://www.dreamincode.net/forums/topic/250097-edit-data-in-database-using-php/#"></a></div><div id="loading"><a id="loadingLink" href="http://www.dreamincode.net/forums/topic/250097-edit-data-in-database-using-php/#"><img src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/loading.gif"></a></div></div></div><div id="imageDataContainer"><div id="imageData"><div id="imageDetails"><span id="caption"></span><span id="numberDisplay"></span></div><div id="bottomNav"><a id="bottomNavClose" href="http://www.dreamincode.net/forums/topic/250097-edit-data-in-database-using-php/#"><img src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/closelabel.gif"></a></div></div></div></div><iframe width="1" height="1" src="./Edit Data In Database Using Php - PHP   Dream.In.Code_files/saved_resource.htm" id="ifr" style="display: none;"></iframe><iframe id="google_osd_static_frame_2646623726468" name="google_osd_static_frame" style="display: none; width: 0px; height: 0px;"></iframe></body></html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html >
+<html>
+<head>
+<meta charset="utf-8">
+	<meta http-equiv="x-UA-compatible " content="IE=edge"/>
+			<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Admin panel</title>
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<link rel="stylesheet" href="../css/font-awesome.min.css" type="text/css">
+</head>
+
+<body style="background:black;">
+	<div id="wrapper">
+		<nav class="nav"><span>WELCOME TO DASHBOARD!</span></nav>
+		<div class="menu">
+		<ul id="navmenu">
+			<li><a href="dashboard.html">Home</a></li>
+			<li>
+			<a href="#">Edit</a>
+				<ul class="submenu1">
+				<li><a href="add_entry.html">add new entry</a></li><br>
+				<li><a href="#">delete entry</a></li><br>
+				<li><a href="add_entry.html">update entry</a></li><br>
+				</ul>
+			</li>	
+			<li>
+			<a href="#">View</a>	
+				<ul class="submenu2">
+					<li><a href="list_entry.html">list all entry</a></li><br>
+					<li><a href="profile.html">view profile</a></li><br>
+				</ul>
+			</li>	
+			
+			<li class="logout"><a href="#">log out</a></li><br>
+		</ul>
+		
+		</div>		
+	
+		<div class="right">	
+		<span>ADD NEW ENTRY</span>
+				
+				
+			<div class="new">
+				<div class="new_content">
+			   <h3 style="margin-left:1em;"> Title:</h3>
+			   <input type="text" name="title" placeholder="Enter the title of your blog">
+					<textarea placeholder="enter your text"></textarea>	
+				<br><br>
+				
+			   
+			   <div id="prof">
+			   <h3>Upload image:</h3> <input type="file" />	
+			</div>
+			<br>
+			<div id="cat"> <h3>Select Category:</h3><select>
+								<option value="science">Science</option>
+								<option value="history">history</option>
+								<option value="philosophy">philosophy</option>
+								<option value="wisdom">wisdom</option>
+								<option value="computer">computer</option>
+									</select>
+									<br>
+									
+			</div>
+			<div id="cat">
+			<h3>Do you want to publish it now?</h3><select>
+											<option value="yes">yes</option>
+											<option value="no">no</option>
+											</select>
+			</div>
+			
+			<div id="cat">
+			<h3>Do you want to feature it now?</h3><select>
+											<option value="yes">yes</option>
+											<option value="no">no</option>
+											</select>
+			</div>
+			
+			<input type="submit" class="button" value="post"> 
+			</div>
+		</div>
+		<div id="clear"></div>
+		</div>
+		<div id="clear"></div>	
+
+		<div id="clear"></div>
+
+		</div>
+	</div>
+</body>
+</html>

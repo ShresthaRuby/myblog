@@ -1,0 +1,8 @@
+<html>
+<table border=10>
+	<tr>
+		<td>Main</td>
+		<td><a href="index.html">Index</a></td>
+	</tr>
+</table>
+</html>
